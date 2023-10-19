@@ -1,0 +1,222 @@
+{
+    "sourceFile": "styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 51,
+            "patches": [
+                {
+                    "date": 1696878986064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696878995275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body {\n-    font-family: open;\n+    font-family: ;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696879003822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body {\n-    font-family: ;\n+    font-family: Open Sans;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696879019758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body {\n-    font-family: Open Sans;\n+    font-family: \"Open Sans\", sans-serif;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696879087174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n+html {\n+    font-size: 16px;\n+}\n+\n body {\n     font-family: \"Open Sans\", sans-serif;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696879212067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,9 @@\n }\n \n body {\n     font-family: \"Open Sans\", sans-serif;\n-}\n\\ No newline at end of file\n+}\n+\n+.label {\n+    border: 2px solid black;\n+}\n"
+                },
+                {
+                    "date": 1696879254460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n }\n \n .label {\n     border: 2px solid black;\n+    width: 270px;\n }\n"
+                },
+                {
+                    "date": 1696879309688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,7 @@\n \n .label {\n     border: 2px solid black;\n     width: 270px;\n+    margin: 20px auto;\n+    padding: 0 7px;\n }\n"
+                },
+                {
+                    "date": 1696879437095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+* {\n+    box-sizing: border-box;\n+}\n+\n html {\n     font-size: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1696879523680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,4 +15,8 @@\n     width: 270px;\n     margin: 20px auto;\n     padding: 0 7px;\n }\n+\n+h1 {\n+    font-weight: 800;\n+}\n"
+                },
+                {
+                    "date": 1696879551146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,6 @@\n }\n \n h1 {\n     font-weight: 800;\n+    text-align: center;\n }\n"
+                },
+                {
+                    "date": 1696879609155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,6 @@\n \n h1 {\n     font-weight: 800;\n     text-align: center;\n+    margin: -4px 0;\n }\n"
+                },
+                {
+                    "date": 1696879657878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,8 @@\n     font-weight: 800;\n     text-align: center;\n     margin: -4px 0;\n }\n+\n+p {\n+    margin: 0;\n+}\n"
+                },
+                {
+                    "date": 1696879811923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,4 +25,8 @@\n \n p {\n     margin: 0;\n }\n+\n+.divider {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696879818230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n     margin: 0;\n }\n \n .divider {\n-    \n+    border-bottom: ;\n }\n"
+                },
+                {
+                    "date": 1696879832086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n     margin: 0;\n }\n \n .divider {\n-    border-bottom: ;\n+    border-bottom: 1px solid #888;\n }\n"
+                },
+                {
+                    "date": 1696879842618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,7 @@\n     margin: 0;\n }\n \n .divider {\n-    border-bottom: 1px solid #888;\n+    border-bottom: 1px solid #888989;\n+    margin: ;\n }\n"
+                },
+                {
+                    "date": 1696879849252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,6 +28,6 @@\n }\n \n .divider {\n     border-bottom: 1px solid #888989;\n-    margin: ;\n+    margin: 2px 0;\n }\n"
+                },
+                {
+                    "date": 1696879965252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n h1 {\n     font-weight: 800;\n     text-align: center;\n     margin: -4px 0;\n+    letter-spacing: 0.15px;\n }\n \n p {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1696880111741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,13 @@\n     margin: 20px auto;\n     padding: 0 7px;\n }\n \n+.bold {\n+    font-weight: 800;\n+}\n+\n h1 {\n-    font-weight: 800;\n     text-align: center;\n     margin: -4px 0;\n     letter-spacing: 0.15px;\n }\n"
+                },
+                {
+                    "date": 1696880307731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n }\n \n p {\n     margin: 0;\n+    display: flex;\n }\n \n .divider {\n     border-bottom: 1px solid #888989;\n"
+                },
+                {
+                    "date": 1696880321482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n \n p {\n     margin: 0;\n     display: flex;\n+    justify-content: space-between;\n }\n \n .divider {\n     border-bottom: 1px solid #888989;\n"
+                },
+                {
+                    "date": 1696880691042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n .bold {\n     font-weight: 800;\n }\n \n-h1 {\n+header h1 {\n     text-align: center;\n     margin: -4px 0;\n     letter-spacing: 0.15px;\n }\n"
+                },
+                {
+                    "date": 1696880806911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,4 +36,6 @@\n .divider {\n     border-bottom: 1px solid #888989;\n     margin: 2px 0;\n }\n+\n+.\n"
+                },
+                {
+                    "date": 1696880813302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,7 @@\n     border-bottom: 1px solid #888989;\n     margin: 2px 0;\n }\n \n-.\n+.large {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696880819491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,6 @@\n     margin: 2px 0;\n }\n \n .large {\n-    \n+    height: ;\n }\n"
+                },
+                {
+                    "date": 1696880886033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,8 @@\n     margin: 2px 0;\n }\n \n .large {\n-    height: ;\n+    height: 10px;\n }\n+\n+.large, .medium\n"
+                },
+                {
+                    "date": 1696880897892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,7 @@\n .large {\n     height: 10px;\n }\n \n-.large, .medium\n+.large, .medium {\n+    background-color: black;\n+}\n"
+                },
+                {
+                    "date": 1696880951803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,6 @@\n }\n \n .large, .medium {\n     background-color: black;\n+    border: 0;\n }\n"
+                },
+                {
+                    "date": 1696881233767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,4 +45,8 @@\n .large, .medium {\n     background-color: black;\n     border: 0;\n }\n+\n+.small-text {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696881243596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,6 @@\n     border: 0;\n }\n \n .small-text {\n-    \n+    font-size: 0.85rem;\n }\n"
+                },
+                {
+                    "date": 1696881298467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,4 +49,8 @@\n \n .small-text {\n     font-size: 0.85rem;\n }\n+\n+.calories-info h2 {\n+    margin: 0;\n+}\n"
+                },
+                {
+                    "date": 1696881517363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,4 +53,8 @@\n \n .calories-info h2 {\n     margin: 0;\n }\n+\n+.calories-info {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696881533453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,6 @@\n     margin: 0;\n }\n \n .calories-info {\n-    \n+    display: flex;\n }\n"
+                },
+                {
+                    "date": 1696881543370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,5 +56,6 @@\n }\n \n .calories-info {\n     display: flex;\n+    justify-content: space-between;\n }\n"
+                },
+                {
+                    "date": 1696881551758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,6 @@\n \n .calories-info {\n     display: flex;\n     justify-content: space-between;\n+    align-items: flex-end;\n }\n"
+                },
+                {
+                    "date": 1696881641326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,4 +59,8 @@\n     display: flex;\n     justify-content: space-between;\n     align-items: flex-end;\n }\n+\n+.left-container p {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696881649071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,6 +61,6 @@\n     align-items: flex-end;\n }\n \n .left-container p {\n-    \n+    margin: -5px -2px;\n }\n"
+                },
+                {
+                    "date": 1696881657799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,5 +62,6 @@\n }\n \n .left-container p {\n     margin: -5px -2px;\n+    font-size: 2em;\n }\n"
+                },
+                {
+                    "date": 1696881663860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,5 +63,6 @@\n \n .left-container p {\n     margin: -5px -2px;\n     font-size: 2em;\n+    font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1696881725585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,8 @@\n     margin: -5px -2px;\n     font-size: 2em;\n     font-weight: 700;\n }\n+\n+.calories-info span {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696881739528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,7 @@\n     font-weight: 700;\n }\n \n .calories-info span {\n-    \n+    font-size: 2.4em;\n+    font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1696881803149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,5 +69,6 @@\n \n .calories-info span {\n     font-size: 2.4em;\n     font-weight: 700;\n+    margin: -7px -2px;\n }\n"
+                },
+                {
+                    "date": 1696881896487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,4 +71,8 @@\n     font-size: 2.4em;\n     font-weight: 700;\n     margin: -7px -2px;\n }\n+\n+.medium {\n+    height: 5px;\n+}\n"
+                },
+                {
+                    "date": 1696882112086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,4 +75,8 @@\n \n .medium {\n     height: 5px;\n }\n+\n+.right {\n+    justify-content: flex-end;\n+}\n"
+                },
+                {
+                    "date": 1696882623972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,4 +79,8 @@\n \n .right {\n     justify-content: flex-end;\n }\n+\n+.indent {\n+    margin-left: ;\n+}\n"
+                },
+                {
+                    "date": 1696882772587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,6 +81,10 @@\n     justify-content: flex-end;\n }\n \n .indent {\n-    margin-left: ;\n+    margin-left: 1em;\n }\n+\n+.daily-value p {\n+    \n+}\n"
+                },
+                {
+                    "date": 1696882785728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,6 +85,6 @@\n     margin-left: 1em;\n }\n \n .daily-value p {\n-    \n+    border-bottom: 1px solid;\n }\n"
+                },
+                {
+                    "date": 1696882991648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n .indent {\n     margin-left: 1em;\n }\n \n-.daily-value p {\n-    border-bottom: 1px solid;\n+.daily-value p:not(.no-divider) {\n+    border-bottom: 1px solid #888989;\n }\n"
+                },
+                {
+                    "date": 1696884133308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,4 +87,8 @@\n \n .daily-value p:not(.no-divider) {\n     border-bottom: 1px solid #888989;\n }\n+\n+.double-indent {\n+    margin-left: 2em;\n+}\n"
+                },
+                {
+                    "date": 1696884997714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,10 @@\n .large {\n     height: 10px;\n }\n \n-.large, .medium {\n+.large,\n+.medium {\n     background-color: black;\n     border: 0;\n }\n \n@@ -91,4 +92,9 @@\n \n .double-indent {\n     margin-left: 2em;\n }\n+\n+.note {\n+    font-size: 0.6rem;\n+    margin: 5px 0;\n+}\n"
+                },
+                {
+                    "date": 1696885065945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,5 +96,7 @@\n \n .note {\n     font-size: 0.6rem;\n     margin: 5px 0;\n+    padding: 0 8px;\n+    text-indent: -8px;\n }\n"
+                }
+            ],
+            "date": 1696878986064,
+            "name": "Commit-0",
+            "content": "body {\n    font-family: open;\n}"
+        }
+    ]
+}

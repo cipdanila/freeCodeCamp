@@ -1,0 +1,310 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 73,
+            "patches": [
+                {
+                    "date": 1696878563542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696878581199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <title>Document</title>\n+    <title>Nutrition Label</title>\n </head>\n <body>\n     \n </body>\n"
+                },
+                {
+                    "date": 1696878618443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Nutrition Label</title>\n </head>\n <body>\n-    \n+    <h1>Nutrition Facts</h1>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696878671314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n     <title>Nutrition Label</title>\n </head>\n <body>\n     <h1>Nutrition Facts</h1>\n+    <p>8 servings per container</p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696878778172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n </head>\n <body>\n     <h1>Nutrition Facts</h1>\n     <p>8 servings per container</p>\n+    <p>Serving size 2/3 cup (55g)</p>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696878877576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n <head>\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Nutrition Label</title>\n+    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,700,800\">\n </head>\n <body>\n     <h1>Nutrition Facts</h1>\n     <p>8 servings per container</p>\n"
+                },
+                {
+                    "date": 1696878888835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Nutrition Label</title>\n     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,700,800\">\n+    <link rel=\"stylesheet\" href=\"styles.css\">\n </head>\n <body>\n     <h1>Nutrition Facts</h1>\n     <p>8 servings per container</p>\n"
+                },
+                {
+                    "date": 1696879152558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,700,800\">\n     <link rel=\"stylesheet\" href=\"styles.css\">\n </head>\n <body>\n-    <h1>Nutrition Facts</h1>\n-    <p>8 servings per container</p>\n-    <p>Serving size 2/3 cup (55g)</p>\n+    <div class=\"label\">\n+        <h1>Nutrition Facts</h1>\n+        <p>8 servings per container</p>\n+        <p>Serving size 2/3 cup (55g)</p>\n+    </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696879734112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n </head>\n <body>\n     <div class=\"label\">\n         <h1>Nutrition Facts</h1>\n+        <div class=\"divider\"></div>\n         <p>8 servings per container</p>\n         <p>Serving size 2/3 cup (55g)</p>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696880019500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <div class=\"label\">\n         <h1>Nutrition Facts</h1>\n         <div class=\"divider\"></div>\n         <p>8 servings per container</p>\n-        <p>Serving size 2/3 cup (55g)</p>\n+        <p class=\"bold\">Serving size 2/3 cup (55g)</p>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696880157931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <link rel=\"stylesheet\" href=\"styles.css\">\n </head>\n <body>\n     <div class=\"label\">\n-        <h1>Nutrition Facts</h1>\n+        <h1 class=\"bold\">Nutrition Facts</h1>\n         <div class=\"divider\"></div>\n         <p>8 servings per container</p>\n         <p class=\"bold\">Serving size 2/3 cup (55g)</p>\n     </div>\n"
+                },
+                {
+                    "date": 1696880238017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <div class=\"label\">\n         <h1 class=\"bold\">Nutrition Facts</h1>\n         <div class=\"divider\"></div>\n         <p>8 servings per container</p>\n-        <p class=\"bold\">Serving size 2/3 cup (55g)</p>\n+        <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696880653821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,13 @@\n     <link rel=\"stylesheet\" href=\"styles.css\">\n </head>\n <body>\n     <div class=\"label\">\n-        <h1 class=\"bold\">Nutrition Facts</h1>\n-        <div class=\"divider\"></div>\n-        <p>8 servings per container</p>\n-        <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n+        <header>\n+            <h1 class=\"bold\">Nutrition Facts</h1>\n+            <div class=\"divider\"></div>\n+            <p>8 servings per container</p>\n+            <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n+        </header>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696880759628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,8 @@\n             <div class=\"divider\"></div>\n             <p>8 servings per container</p>\n             <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n         </header>\n+        <div class=\"divider large\"></div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881028608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n             <p>8 servings per container</p>\n             <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n         </header>\n         <div class=\"divider large\"></div>\n+        <div class=\"calories-info\"></div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881068146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n             <p>8 servings per container</p>\n             <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n         </header>\n         <div class=\"divider large\"></div>\n-        <div class=\"calories-info\"></div>\n+        <div class=\"calories-info\">\n+            \n+        </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881078977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n-            \n+            <div class=\"left-container\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881138551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n             <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n-            <div class=\"left-container\"></div>\n+            <div class=\"left-container\">\n+                h2.\n+            </div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881147667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n-                h2.\n+                <h2 class=\"bold_small-text\"></h2>\n             </div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696881154007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n-                <h2 class=\"bold_small-text\"></h2>\n+                <h2 class=\"bold small-text\">Am</h2>\n             </div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696881159248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n-                <h2 class=\"bold small-text\">Am</h2>\n+                <h2 class=\"bold small-text\">Amount </h2>\n             </div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696881164971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n-                <h2 class=\"bold small-text\">Amount </h2>\n+                <h2 class=\"bold small-text\">Amount per serving</h2>\n             </div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696881354987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n                 <h2 class=\"bold small-text\">Amount per serving</h2>\n+                <p>Calories</p>\n             </div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696881389070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n+                <span>230</span>\n                 <h2 class=\"bold small-text\">Amount per serving</h2>\n                 <p>Calories</p>\n             </div>\n         </div>\n"
+                },
+                {
+                    "date": 1696881435045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,12 @@\n         </header>\n         <div class=\"divider large\"></div>\n         <div class=\"calories-info\">\n             <div class=\"left-container\">\n-                <span>230</span>\n                 <h2 class=\"bold small-text\">Amount per serving</h2>\n                 <p>Calories</p>\n             </div>\n+            <span>230</span>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881857079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,8 @@\n                 <p>Calories</p>\n             </div>\n             <span>230</span>\n         </div>\n+        <div class=\"divider medim\"></div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881986718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n                 <p>Calories</p>\n             </div>\n             <span>230</span>\n         </div>\n-        <div class=\"divider medim\"></div>\n+        <div class=\"divider medium\"></div>\n+        \n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696881995980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n             </div>\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n-        \n+        .daily-value_\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882008939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,10 @@\n             </div>\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n-        .daily-value_\n+        <div class=\"daily-value small-text\">\n+            \n+        </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882023003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n-            \n+            <p class=\"bold right\"></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882029316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n-            <p class=\"bold right\"></p>\n+            <p class=\"bold right\">% Daily </p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882178181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n-            <p class=\"bold right\">% Daily </p>\n+            <p class=\"bold right\">% Daily Value *</p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882354419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n+            \n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882362809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            \n+            <p><span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882370009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span></span></p>\n+            <p><span>span.</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882375803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span>span.</span></p>\n+            <p><span><span class=\"bold\"></span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882381830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\"></span></span></p>\n+            <p><span><span class=\"bold\">Total Fat</span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882392013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Total Fat</span></span></p>\n+            <p><span><span class=\"bold\">Total Fat</span> 8g</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882398641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Total Fat</span> 8g</span></p>\n+            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882405219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span></span></p>\n+            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span class=\"bold\"></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882412747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span class=\"bold\"></span></p>\n+            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span class=\"bold\">10%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882432525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Total Fat</span> 8g</span><span class=\"bold\">10%</span></p>\n+            <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882517007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n+            <p></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882522945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n-            <p></p>\n+            <p>Saturated Fat</p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882532460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n-            <p>Saturated Fat</p>\n+            <p>Saturated Fat 1g <span class=\"bold\"></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882576039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n-            <p>Saturated Fat 1g <span class=\"bold\"></span></p>\n+            <p class=\"indent\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696882888689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             <span>230</span>\n         </div>\n         <div class=\"divider medium\"></div>\n         <div class=\"daily-value small-text\">\n-            <p class=\"bold right\">% Daily Value *</p>\n+            <p class=\"bold right no-divider\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n         </div>\n"
+                },
+                {
+                    "date": 1696882897704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         <div class=\"daily-value small-text\">\n             <p class=\"bold right no-divider\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n-            <p class=\"indent\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n+            <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883061317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n             <p class=\"bold right no-divider\">% Daily Value *</p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883190028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n+            \n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883204956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n-            \n+            <p class=\"indent_no-divider\"></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883216193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n-            <p class=\"indent_no-divider\"></p>\n+            <p class=\"indent no-divider\"><span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883223501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n-            <p class=\"indent no-divider\"><span></span></p>\n+            <p class=\"indent no-divider\"><span><i>Trans</i></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883231253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n-            <p class=\"indent no-divider\"><span><i>Trans</i></span></p>\n+            <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883287928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n             <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883427599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n+            \n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883447699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n-            \n+            <p><span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883481603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n-            <p><span></span></p>\n+            <p><span><span class=\"bold\">Cholesterol</span></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883489603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Cholesterol</span></span></p>\n+            <p><span><span class=\"bold\">Cholesterol</span> 0mg</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883500314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Cholesterol</span> 0mg</span></p>\n+            <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\"></span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883587350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n             <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n-            <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\"></span></p>\n+            <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\">0%</span></p>\n+            <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883685097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n             <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\">0%</span></p>\n             <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n+            <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883863021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,10 @@\n             <div class=\"divider\"></div>\n             <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\">0%</span></p>\n             <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n             <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n+            <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883980544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,10 @@\n             <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n             <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n             <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n             <div class=\"divider\"></div>\n+            <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696883995126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n             <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n             <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n             <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n             <div class=\"divider\"></div>\n-            <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n+            <p class=\"indent no-divider\"><span><i>Total Sugars</i> 4g</span></p>\n             <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n"
+                },
+                {
+                    "date": 1696884074748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,10 @@\n             <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n             <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n             <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n             <div class=\"divider\"></div>\n-            <p class=\"indent no-divider\"><span><i>Total Sugars</i> 4g</span></p>\n-            <div class=\"divider\"></div>\n+            <p class=\"indent no-divider\"><span><i>Total Sugars</i> 12g</span></p>\n+            <div class=\"divider double-indent\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884336182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,10 @@\n             <p class=\"indent no-divider\"><span><i>Dietary Fiber</i> 4g</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span><i>Total Sugars</i> 12g</span></p>\n             <div class=\"divider double-indent\"></div>\n+            <p class=\"double-indent no-divider\">Includes 10g Added Sugars <span class=\"bold\">20%</span></p>\n+            <div class=\"divider\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884504821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,10 @@\n             <p class=\"indent no-divider\"><span><i>Total Sugars</i> 12g</span></p>\n             <div class=\"divider double-indent\"></div>\n             <p class=\"double-indent no-divider\">Includes 10g Added Sugars <span class=\"bold\">20%</span></p>\n             <div class=\"divider\"></div>\n+            <p class=\"indent no-divider\"><span class=\"bold\">Protein</span> 3g</p>\n+            <div class=\"divider large\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884588777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n             <p class=\"double-indent no-divider\">Includes 10g Added Sugars <span class=\"bold\">20%</span></p>\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span class=\"bold\">Protein</span> 3g</p>\n             <div class=\"divider large\"></div>\n+            <p>Vitamin D 2mcg <span>10%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884679189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,10 @@\n             <div class=\"divider\"></div>\n             <p class=\"indent no-divider\"><span class=\"bold\">Protein</span> 3g</p>\n             <div class=\"divider large\"></div>\n             <p>Vitamin D 2mcg <span>10%</span></p>\n+            <p>Calcium 260mg <span>20%</span></p>\n+            <p>Iron 8mg <span>45%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884793025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n             <div class=\"divider large\"></div>\n             <p>Vitamin D 2mcg <span>10%</span></p>\n             <p>Calcium 260mg <span>20%</span></p>\n             <p>Iron 8mg <span>45%</span></p>\n+            <p class=\"no-divider\">Potassium 235mg <span>6%</span></p>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884835949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,8 @@\n             <p>Calcium 260mg <span>20%</span></p>\n             <p>Iron 8mg <span>45%</span></p>\n             <p class=\"no-divider\">Potassium 235mg <span>6%</span></p>\n         </div>\n+        <div class=\"divider medium\"></div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884859285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,7 +48,8 @@\n             <p>Iron 8mg <span>45%</span></p>\n             <p class=\"no-divider\">Potassium 235mg <span>6%</span></p>\n         </div>\n         <div class=\"divider medium\"></div>\n+        <p class=\"note\"></p>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696884886862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n             <p>Iron 8mg <span>45%</span></p>\n             <p class=\"no-divider\">Potassium 235mg <span>6%</span></p>\n         </div>\n         <div class=\"divider medium\"></div>\n-        <p class=\"note\"></p>\n+        <p class=\"note\">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes\n+            to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1696878563542,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n</head>\n<body>\n    \n</body>\n</html>"
+        }
+    ]
+}
