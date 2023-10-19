@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+span[class~="sr-only"] {    /* select any span element whose class are "sr-only" */
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important; /* define the visible portions of an element */
+    clip-path: inset(50%) !important;          /* determines the shape clip property should take */
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+h1 .flex span:first-of-type {           /* target the first element that matches the selector */
+                                        /* since span elements are reversed, it will apply to second element */
+    font-size: 0.7em;                   /* make the font to look like a sub-header */
+}
+
+h1 .flex span:last-of-type {            /* target the last element that matches the selector */
+    font-size: 1.2em;                   /* make the font to look like a header */
+}
+
+section {
+    max-width: 40rem;                   /* for responsive design */
+    margin: 0 auto;                     /* center it */
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    color: #fff;
+    background-color: #0a0a23;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */
+    margin: 0 -2px;
+    z-index: 999;
+}
+
+#years span[class] {                    /* target any span element that has a class attribute */
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+
+tbody td {
+    width: 100vw;                           /* fill the viewport */
+        /* fix the width */
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+tbody th {
+    width: calc(100% - 12rem);              /* width of the entire container less 12rem (192px?) */
+}
+
+tr[class="total"] {                         /* select tr elements where the only class is "total" */
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th {                       /* select th elements within tr where the class is "total" */
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {                                 /* select all td elements within tr with "total" class */
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+/* The key difference between tr[class="total"] and tr.total is that the first will select tr elements
+    where the only class is total. The second will select tr elements where the class includes total.
+*/
+
+tr.total td:nth-of-type(3) {                /* select the third td element of tr with "total" class */
+    padding-right: 0.5rem;
+}
+
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+td[class="current"] {
+    font-style: italic;
+}
+
+tr[class="data"] {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data th .description {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    padding: 0.3rem 0.25rem 0;
+    text-align: right;
+}
+
+tr.data td:last-of-type {
+    padding-right: 0.5rem;
+}

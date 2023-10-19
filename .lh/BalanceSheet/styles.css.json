@@ -1,0 +1,474 @@
+{
+    "sourceFile": "BalanceSheet/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 114,
+            "patches": [
+                {
+                    "date": 1697730614382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697730624289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +0,0 @@\n-* {\n-    background-color: blue;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697736276076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+html {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697736286902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n html {\n-    \n+    box-sizing: border-box;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697736347399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n html {\n     box-sizing: border-box;\n-}\n\\ No newline at end of file\n+}\n+\n+body {\n+    \n+}\n"
+                },
+                {
+                    "date": 1697736356945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     box-sizing: border-box;\n }\n \n body {\n-    \n+    font-family: sans-serif;\n }\n"
+                },
+                {
+                    "date": 1697736374374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n }\n \n body {\n     font-family: sans-serif;\n+    color: #0a0a23;\n }\n"
+                },
+                {
+                    "date": 1697736527255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,6 @@\n body {\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n+\n+span\n"
+                },
+                {
+                    "date": 1697736533464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span\n+span[class]\n"
+                },
+                {
+                    "date": 1697736543784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class]\n+span[class~]\n"
+                },
+                {
+                    "date": 1697736559481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~]\n+span[class~=\"sr-only\"]\n"
+                },
+                {
+                    "date": 1697736577985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"]\n+span[class~=\"sr-only\"] {\n+    \n+}\n"
+                },
+                {
+                    "date": 1697736585765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     color: #0a0a23;\n }\n \n span[class~=\"sr-only\"] {\n-    \n+    border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736748683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {\n+span[class~=\"sr-only\"] {    /*  */\n     border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736755187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {    /*  */\n+span[class~=\"sr-only\"] {    /* select  */\n     border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736766829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {    /* select  */\n+span[class~=\"sr-only\"] {    /* select any span element whose class  */\n     border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736777484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {    /* select any span element whose class  */\n+span[class~=\"sr-only\"] {    /* select any span element whose class are \"\" */\n     border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736787063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {    /* select any span element whose class are \"\" */\n+span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n }\n"
+                },
+                {
+                    "date": 1697736869364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n+    clip: rect(1px, 1px, 1px, 1px);\n }\n"
+                },
+                {
+                    "date": 1697736887181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n-    clip: rect(1px, 1px, 1px, 1px);\n+    clip: rect(1px, 1px, 1px, 1px); /*  */\n }\n"
+                },
+                {
+                    "date": 1697736894910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /*  */\n+    clip: rect(1px, 1px, 1px, 1px); /* define the visible  */\n }\n"
+                },
+                {
+                    "date": 1697736901361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /* define the visible  */\n+    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions */\n }\n"
+                },
+                {
+                    "date": 1697736907599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions */\n+    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n }\n"
+                },
+                {
+                    "date": 1697736921334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n+    \n }\n"
+                },
+                {
+                    "date": 1697736927700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    \n+    clip-path: ;\n }\n"
+                },
+                {
+                    "date": 1697736944672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: ;\n+    clip-path: inset(50%);          /*  */\n }\n"
+                },
+                {
+                    "date": 1697736955983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: inset(50%);          /*  */\n+    clip-path: inset(50%);          /* determines the shape  */\n }\n"
+                },
+                {
+                    "date": 1697736967390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: inset(50%);          /* determines the shape  */\n+    clip-path: inset(50%);          /* determines the shape clip p should take */\n }\n"
+                },
+                {
+                    "date": 1697737006274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,5 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n-    border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: inset(50%);          /* determines the shape clip p should take */\n-}\n+\n"
+                },
+                {
+                    "date": 1697737011839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,9 @@\n     font-family: sans-serif;\n     color: #0a0a23;\n }\n \n-\n+span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n+    border: 0;\n+    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n+    clip-path: inset(50%);          /* determines the shape clip property should take */\n+}\n"
+                },
+                {
+                    "date": 1697737091464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,7 @@\n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n     border: 0;\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n     clip-path: inset(50%);          /* determines the shape clip property should take */\n+    width: 1px;\n+    height: 1px;\n }\n"
+                },
+                {
+                    "date": 1697738076599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,6 @@\n     clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n     clip-path: inset(50%);          /* determines the shape clip property should take */\n     width: 1px;\n     height: 1px;\n+    overflow: hidden;\n }\n"
+                },
+                {
+                    "date": 1697738091261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,6 @@\n     clip-path: inset(50%);          /* determines the shape clip property should take */\n     width: 1px;\n     height: 1px;\n     overflow: hidden;\n+    white-space: n;\n }\n"
+                },
+                {
+                    "date": 1697738096996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,6 @@\n     clip-path: inset(50%);          /* determines the shape clip property should take */\n     width: 1px;\n     height: 1px;\n     overflow: hidden;\n-    white-space: n;\n+    white-space: nowrap;\n }\n"
+                },
+                {
+                    "date": 1697738175641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,6 @@\n     width: 1px;\n     height: 1px;\n     overflow: hidden;\n     white-space: nowrap;\n+    position: absolute;\n }\n"
+                },
+                {
+                    "date": 1697738227774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+html {\n+    box-sizing: border-box;\n+}\n+\n+body {\n+    font-family: sans-serif;\n+    color: #0a0a23;\n+}\n+\n+span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n+    border: 0;\n+    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n+    clip-path: inset(50%);          /* determines the shape clip property should take */\n+    width: 1px;\n+    height: 1px;\n+    overflow: hidden;\n+    white-space: nowrap;\n+    position: absolute;\n+    padding: 0;\n+    margin: -1px;\n+}\n"
+                },
+                {
+                    "date": 1697738277709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,23 +18,8 @@\n     position: absolute;\n     padding: 0;\n     margin: -1px;\n }\n-html {\n-    box-sizing: border-box;\n-}\n \n-body {\n-    font-family: sans-serif;\n-    color: #0a0a23;\n+h1 {\n+    \n }\n-\n-span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n-    border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: inset(50%);          /* determines the shape clip property should take */\n-    width: 1px;\n-    height: 1px;\n-    overflow: hidden;\n-    white-space: nowrap;\n-    position: absolute;\n-}\n"
+                },
+                {
+                    "date": 1697738339578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,6 @@\n     margin: -1px;\n }\n \n h1 {\n-    \n+    max-width: 37.25;\n }\n"
+                },
+                {
+                    "date": 1697738345509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,7 @@\n     margin: -1px;\n }\n \n h1 {\n-    max-width: 37.25;\n+    max-width: 37.25rem;\n+    \n }\n"
+                },
+                {
+                    "date": 1697738351631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n }\n \n h1 {\n     max-width: 37.25rem;\n-    \n+    margin: 0 auto;\n }\n"
+                },
+                {
+                    "date": 1697738357928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n \n h1 {\n     max-width: 37.25rem;\n     margin: 0 auto;\n+    padding: ;\n }\n"
+                },
+                {
+                    "date": 1697738365818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,6 @@\n \n h1 {\n     max-width: 37.25rem;\n     margin: 0 auto;\n-    padding: ;\n+    padding: 1.5rem 1.25rem;\n }\n"
+                },
+                {
+                    "date": 1697738457957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,4 +24,8 @@\n     max-width: 37.25rem;\n     margin: 0 auto;\n     padding: 1.5rem 1.25rem;\n }\n+\n+h1 .flex {\n+    \n+}\n"
+                },
+                {
+                    "date": 1697738472391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,7 @@\n     padding: 1.5rem 1.25rem;\n }\n \n h1 .flex {\n-    \n+    display: flex;\n+    flex-direction: column-reverse;\n }\n"
+                },
+                {
+                    "date": 1697738480846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,6 @@\n \n h1 .flex {\n     display: flex;\n     flex-direction: column-reverse;\n+    gap: ;\n }\n"
+                },
+                {
+                    "date": 1697738937746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,6 +28,8 @@\n \n h1 .flex {\n     display: flex;\n     flex-direction: column-reverse;\n-    gap: ;\n+    gap: 1rem;\n }\n+\n+\n"
+                },
+                {
+                    "date": 1697739003530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     flex-direction: column-reverse;\n     gap: 1rem;\n }\n \n-\n+h1 .flex\n"
+                },
+                {
+                    "date": 1697739025768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,7 @@\n     flex-direction: column-reverse;\n     gap: 1rem;\n }\n \n-h1 .flex\n+h1 .flex span:first-of-type {           /*  */\n+\n+}\n"
+                },
+                {
+                    "date": 1697739183733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,7 @@\n     flex-direction: column-reverse;\n     gap: 1rem;\n }\n \n-h1 .flex span:first-of-type {           /*  */\n+h1 .flex span:first-of-type {           /* target the first element that match */\n \n }\n"
+                },
+                {
+                    "date": 1697739191792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,7 @@\n     flex-direction: column-reverse;\n     gap: 1rem;\n }\n \n-h1 .flex span:first-of-type {           /* target the first element that match */\n+h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n \n }\n"
+                },
+                {
+                    "date": 1697739206834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-\n+    \n }\n"
+                },
+                {
+                    "date": 1697739220103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    \n+    font-size: 0.7em;                   /**/\n }\n"
+                },
+                {
+                    "date": 1697739267591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    font-size: 0.7em;                   /**/\n+    font-size: 0.7em;                   /* since  */\n }\n"
+                },
+                {
+                    "date": 1697739283099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    font-size: 0.7em;                   /* since  */\n+    font-size: 0.7em;                   /* since span elements are reversed */\n }\n"
+                },
+                {
+                    "date": 1697739304978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    font-size: 0.7em;                   /* since span elements are reversed */\n+    font-size: 0.7em;                   /* since span elements are reversed, it will apply to second  */\n }\n"
+                },
+                {
+                    "date": 1697739313386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    font-size: 0.7em;                   /* since span elements are reversed, it will apply to second  */\n+    font-size: 0.7em;                   /* since span elements are reversed, it will apply to second element */\n }\n"
+                },
+                {
+                    "date": 1697739457868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,7 @@\n     gap: 1rem;\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n+                                        /* since span elements are reversed, it will apply to second element */\n     font-size: 0.7em;                   /* since span elements are reversed, it will apply to second element */\n }\n"
+                },
+                {
+                    "date": 1697739478503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,6 @@\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n                                         /* since span elements are reversed, it will apply to second element */\n-    font-size: 0.7em;                   /* since span elements are reversed, it will apply to second element */\n+    font-size: 0.7em;                   /* make the font to  */\n }\n"
+                },
+                {
+                    "date": 1697739486872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,6 @@\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n                                         /* since span elements are reversed, it will apply to second element */\n-    font-size: 0.7em;                   /* make the font to  */\n+    font-size: 0.7em;                   /* make the font to look like sub-header */\n }\n"
+                },
+                {
+                    "date": 1697739509295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,4 +35,9 @@\n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n                                         /* since span elements are reversed, it will apply to second element */\n     font-size: 0.7em;                   /* make the font to look like sub-header */\n }\n+\n+h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n+    /* since span elements are reversed, it will apply to second element */\n+font-size: 0.7em;                   /* make the font to look like sub-header */\n+}\n"
+                },
+                {
+                    "date": 1697739555900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,7 @@\n                                         /* since span elements are reversed, it will apply to second element */\n     font-size: 0.7em;                   /* make the font to look like sub-header */\n }\n \n-h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n-    /* since span elements are reversed, it will apply to second element */\n-font-size: 0.7em;                   /* make the font to look like sub-header */\n+h1 .flex span:last-of-type {            /* target the last element that matches the selector */\n+    font-size: 0.7em;                   /* make the font to look like sub-header */\n }\n"
+                },
+                {
+                    "date": 1697739619931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n }\n \n h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n                                         /* since span elements are reversed, it will apply to second element */\n-    font-size: 0.7em;                   /* make the font to look like sub-header */\n+    font-size: 0.7em;                   /* make the font to look like a sub-header */\n }\n \n h1 .flex span:last-of-type {            /* target the last element that matches the selector */\n-    font-size: 0.7em;                   /* make the font to look like sub-header */\n+    font-size: 0.7em;                   /* make the font to look like a header */\n }\n"
+                },
+                {
+                    "date": 1697739627278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,6 @@\n     font-size: 0.7em;                   /* make the font to look like a sub-header */\n }\n \n h1 .flex span:last-of-type {            /* target the last element that matches the selector */\n-    font-size: 0.7em;                   /* make the font to look like a header */\n+    font-size: 1.2em;                   /* make the font to look like a header */\n }\n"
+                },
+                {
+                    "date": 1697739791200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,4 +39,8 @@\n \n h1 .flex span:last-of-type {            /* target the last element that matches the selector */\n     font-size: 1.2em;                   /* make the font to look like a header */\n }\n+\n+section {\n+    max-width: 40;\n+}\n"
+                },
+                {
+                    "date": 1697739852902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,6 +41,6 @@\n     font-size: 1.2em;                   /* make the font to look like a header */\n }\n \n section {\n-    max-width: 40;\n+    max-width: 40rem;                   /*  */\n }\n"
+                },
+                {
+                    "date": 1697739858976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,6 +41,6 @@\n     font-size: 1.2em;                   /* make the font to look like a header */\n }\n \n section {\n-    max-width: 40rem;                   /*  */\n+    max-width: 40rem;                   /* for responsive */\n }\n"
+                },
+                {
+                    "date": 1697739866401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,6 +41,7 @@\n     font-size: 1.2em;                   /* make the font to look like a header */\n }\n \n section {\n-    max-width: 40rem;                   /* for responsive */\n+    max-width: 40rem;                   /* for responsive design */\n+    max-width: 40rem;                   /* for responsive design */\n }\n"
+                },
+                {
+                    "date": 1697739872292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n }\n \n section {\n     max-width: 40rem;                   /* for responsive design */\n-    max-width: 40rem;                   /* for responsive design */\n+    margin: ;                   /* for responsive design */\n }\n"
+                },
+                {
+                    "date": 1697739879175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n }\n \n section {\n     max-width: 40rem;                   /* for responsive design */\n-    margin: ;                   /* for responsive design */\n+    margin: 0 auto;                     /* for responsive design */\n }\n"
+                },
+                {
+                    "date": 1697739890908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n }\n \n section {\n     max-width: 40rem;                   /* for responsive design */\n-    margin: 0 auto;                     /* for responsive design */\n+    margin: 0 auto;                     /* center it */\n }\n"
+                },
+                {
+                    "date": 1697739941168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,6 @@\n \n section {\n     max-width: 40rem;                   /* for responsive design */\n     margin: 0 auto;                     /* center it */\n+    border: 2px solid #d0d0;\n }\n"
+                },
+                {
+                    "date": 1697740193992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,10 @@\n \n section {\n     max-width: 40rem;                   /* for responsive design */\n     margin: 0 auto;                     /* center it */\n-    border: 2px solid #d0d0;\n+    border: 2px solid #d0d0d5;\n }\n+\n+#years {\n+    \n+}\n"
+                },
+                {
+                    "date": 1697740209082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,6 @@\n     border: 2px solid #d0d0d5;\n }\n \n #years {\n-    \n+    display: ;\n }\n"
+                },
+                {
+                    "date": 1697740223301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,7 @@\n     border: 2px solid #d0d0d5;\n }\n \n #years {\n-    display: ;\n+    display: flex;\n+    justify-content: flex-end;\n }\n"
+                },
+                {
+                    "date": 1697740341391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,7 @@\n \n #years {\n     display: flex;\n     justify-content: flex-end;\n+    position: sticky;\n+    top: 0;\n }\n"
+                },
+                {
+                    "date": 1697740464279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,7 @@\n     display: flex;\n     justify-content: flex-end;\n     position: sticky;\n     top: 0;\n+    color: #fff;\n+    background-color: #0a0a23;\n }\n"
+                },
+                {
+                    "date": 1697741375058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,5 +53,6 @@\n     position: sticky;\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n+    \n }\n"
+                },
+                {
+                    "date": 1697741382802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,6 +53,6 @@\n     position: sticky;\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n-    \n+    margin: 0 ;\n }\n"
+                },
+                {
+                    "date": 1697741389896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,6 +53,7 @@\n     position: sticky;\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n-    margin: 0 ;\n+    margin: 0 -2px;\n+    padding: ;\n }\n"
+                },
+                {
+                    "date": 1697741395981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: ;\n+    padding: 0.5rem;\n }\n"
+                },
+                {
+                    "date": 1697741408328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,6 @@\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n     padding: 0.5rem;\n+    calc\n }\n"
+                },
+                {
+                    "date": 1697741717299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,7 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: 0.5rem;\n-    calc\n+    padding: 0.5rem\n }\n"
+                },
+                {
+                    "date": 1697741727778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: 0.5rem\n+    padding: 0.5rem calc(1.25rem + )\n }\n"
+                },
+                {
+                    "date": 1697741736787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: 0.5rem calc(1.25rem + )\n+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem \n }\n"
+                },
+                {
+                    "date": 1697741748060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem \n+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*  */\n }\n"
+                },
+                {
+                    "date": 1697741767814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n     margin: 0 -2px;\n-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*  */\n+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n }\n"
+                },
+                {
+                    "date": 1697741925549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,8 @@\n     position: sticky;\n     top: 0;\n     color: #fff;\n     background-color: #0a0a23;\n+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n     margin: 0 -2px;\n-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n+    \n }\n"
+                },
+                {
+                    "date": 1697741933455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,6 @@\n     color: #fff;\n     background-color: #0a0a23;\n     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n     margin: 0 -2px;\n-    \n+    position: sticky;\n }\n"
+                },
+                {
+                    "date": 1697742409953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,5 @@\n     color: #fff;\n     background-color: #0a0a23;\n     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n     margin: 0 -2px;\n-    position: sticky;\n }\n"
+                },
+                {
+                    "date": 1697742434900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,6 @@\n     color: #fff;\n     background-color: #0a0a23;\n     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n     margin: 0 -2px;\n+    z-index: 999;\n }\n"
+                },
+                {
+                    "date": 1697742541479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,4 +57,8 @@\n     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n     margin: 0 -2px;\n     z-index: 999;\n }\n+\n+#years span[class] {                    /* tarhet */\n+\n+}\n"
+                },
+                {
+                    "date": 1697742556652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,7 +58,7 @@\n     margin: 0 -2px;\n     z-index: 999;\n }\n \n-#years span[class] {                    /* tarhet */\n+#years span[class] {                    /* target any span element  */\n \n }\n"
+                },
+                {
+                    "date": 1697742572461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,7 +58,7 @@\n     margin: 0 -2px;\n     z-index: 999;\n }\n \n-#years span[class] {                    /* target any span element  */\n-\n+#years span[class] {                    /* target any span element that has a class attribute */\n+    \n }\n"
+                },
+                {
+                    "date": 1697742588896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,6 +59,6 @@\n     z-index: 999;\n }\n \n #years span[class] {                    /* target any span element that has a class attribute */\n-    \n+    font-weight: bold;\n }\n"
+                },
+                {
+                    "date": 1697742646424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,5 +60,6 @@\n }\n \n #years span[class] {                    /* target any span element that has a class attribute */\n     font-weight: bold;\n+    width: 4.5rem;\n }\n"
+                },
+                {
+                    "date": 1697742658561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,6 @@\n \n #years span[class] {                    /* target any span element that has a class attribute */\n     font-weight: bold;\n     width: 4.5rem;\n+    text-align: right;\n }\n"
+                },
+                {
+                    "date": 1697742817828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,4 +63,6 @@\n     font-weight: bold;\n     width: 4.5rem;\n     text-align: right;\n }\n+\n+\n"
+                },
+                {
+                    "date": 1697742828829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,5 +64,7 @@\n     width: 4.5rem;\n     text-align: right;\n }\n \n-\n+.table-wrap {\n+    padding: ;\n+}\n"
+                },
+                {
+                    "date": 1697742838356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,6 @@\n     text-align: right;\n }\n \n .table-wrap {\n-    padding: ;\n+    padding: 0 0.75rem 1.5rem;\n }\n"
+                },
+                {
+                    "date": 1697742844998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,6 @@\n     text-align: right;\n }\n \n .table-wrap {\n-    padding: 0 0.75rem 1.5rem;\n+    padding: 0 0.75rem 1.5rem 0.75rem;\n }\n"
+                },
+                {
+                    "date": 1697742933547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,4 +67,6 @@\n \n .table-wrap {\n     padding: 0 0.75rem 1.5rem 0.75rem;\n }\n+\n+span\n"
+                },
+                {
+                    "date": 1697742946160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,5 @@\n .table-wrap {\n     padding: 0 0.75rem 1.5rem 0.75rem;\n }\n \n-span\n+span:not(.sr-only) {}\n"
+                },
+                {
+                    "date": 1697742955839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,7 @@\n .table-wrap {\n     padding: 0 0.75rem 1.5rem 0.75rem;\n }\n \n-span:not(.sr-only) {}\n+span:not(.sr-only) {\n+    font-weight: normal;\n+}\n"
+                },
+                {
+                    "date": 1697743739813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,18 +7,18 @@\n     color: #0a0a23;\n }\n \n span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n-    border: 0;\n-    clip: rect(1px, 1px, 1px, 1px); /* define the visible portions of an element */\n-    clip-path: inset(50%);          /* determines the shape clip property should take */\n-    width: 1px;\n-    height: 1px;\n-    overflow: hidden;\n-    white-space: nowrap;\n-    position: absolute;\n-    padding: 0;\n-    margin: -1px;\n+    border: 0 !important;\n+    clip: rect(1px, 1px, 1px, 1px) !important; /* define the visible portions of an element */\n+    clip-path: inset(50%) !important;          /* determines the shape clip property should take */\n+    width: 1px !important;\n+    height: 1px !important;\n+    overflow: hidden !important;\n+    white-space: nowrap !important;\n+    position: absolute !important;\n+    padding: 0 !important;\n+    margin: -1px !important;\n }\n \n h1 {\n     max-width: 37.25rem;\n"
+                },
+                {
+                    "date": 1697743811700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n .table-wrap {\n     padding: 0 0.75rem 1.5rem 0.75rem;\n }\n \n-span:not(.sr-only) {\n+span {\n     font-weight: normal;\n }\n"
+                },
+                {
+                    "date": 1697743865421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,4 +71,8 @@\n \n span {\n     font-weight: normal;\n }\n+\n+table {\n+    border-collapse: collapse;\n+}\n"
+                },
+                {
+                    "date": 1697743893645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,6 @@\n }\n \n table {\n     border-collapse: collapse;\n+    border: 0;\n }\n"
+                },
+                {
+                    "date": 1697743997940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,6 @@\n \n table {\n     border-collapse: collapse;\n     border: 0;\n+    \n }\n"
+                },
+                {
+                    "date": 1697744008945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,6 +75,7 @@\n \n table {\n     border-collapse: collapse;\n     border: 0;\n-    \n+    width: 100%;\n+    position: relative;\n }\n"
+                },
+                {
+                    "date": 1697744015867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,6 @@\n     border-collapse: collapse;\n     border: 0;\n     width: 100%;\n     position: relative;\n+    margin-top: 3rem;\n }\n"
+                },
+                {
+                    "date": 1697744097614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,4 +79,8 @@\n     width: 100%;\n     position: relative;\n     margin-top: 3rem;\n }\n+\n+table caption {\n+    \n+}\n"
+                },
+                {
+                    "date": 1697744104350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,6 +81,6 @@\n     margin-top: 3rem;\n }\n \n table caption {\n-    \n+    color: #;\n }\n"
+                },
+                {
+                    "date": 1697744114016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,6 +81,6 @@\n     margin-top: 3rem;\n }\n \n table caption {\n-    color: #;\n+    color: #356eaf;\n }\n"
+                },
+                {
+                    "date": 1697744343710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,6 +82,6 @@\n }\n \n table caption {\n     color: #356eaf;\n-    \n+    f\n }\n"
+                },
+                {
+                    "date": 1697745329915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,112 @@\n+html {\n+    box-sizing: border-box;\n+}\n+\n+body {\n+    font-family: sans-serif;\n+    color: #0a0a23;\n+}\n+\n+span[class~=\"sr-only\"] {    /* select any span element whose class are \"sr-only\" */\n+    border: 0 !important;\n+    clip: rect(1px, 1px, 1px, 1px) !important; /* define the visible portions of an element */\n+    clip-path: inset(50%) !important;          /* determines the shape clip property should take */\n+    width: 1px !important;\n+    height: 1px !important;\n+    overflow: hidden !important;\n+    white-space: nowrap !important;\n+    position: absolute !important;\n+    padding: 0 !important;\n+    margin: -1px !important;\n+}\n+\n+h1 {\n+    max-width: 37.25rem;\n+    margin: 0 auto;\n+    padding: 1.5rem 1.25rem;\n+}\n+\n+h1 .flex {\n+    display: flex;\n+    flex-direction: column-reverse;\n+    gap: 1rem;\n+}\n+\n+h1 .flex span:first-of-type {           /* target the first element that matches the selector */\n+                                        /* since span elements are reversed, it will apply to second element */\n+    font-size: 0.7em;                   /* make the font to look like a sub-header */\n+}\n+\n+h1 .flex span:last-of-type {            /* target the last element that matches the selector */\n+    font-size: 1.2em;                   /* make the font to look like a header */\n+}\n+\n+section {\n+    max-width: 40rem;                   /* for responsive design */\n+    margin: 0 auto;                     /* center it */\n+    border: 2px solid #d0d0d5;\n+}\n+\n+#years {\n+    display: flex;\n+    justify-content: flex-end;\n+    position: sticky;\n+    top: 0;\n+    color: #fff;\n+    background-color: #0a0a23;\n+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /* calculate right padding */\n+    margin: 0 -2px;\n+    z-index: 999;\n+}\n+\n+#years span[class] {                    /* target any span element that has a class attribute */\n+    font-weight: bold;\n+    width: 4.5rem;\n+    text-align: right;\n+}\n+\n+.table-wrap {\n+    padding: 0 0.75rem 1.5rem 0.75rem;\n+}\n+\n+span {\n+    font-weight: normal;\n+}\n+\n+table {\n+    border-collapse: collapse;\n+    border: 0;\n+    width: 100%;\n+    position: relative;\n+    margin-top: 3rem;\n+}\n+\n+table caption {\n+    color: #356eaf;\n+    font-size: 1.3em;\n+    font-weight: normal;\n+    position: absolute;\n+    top: -2.25rem;\n+    left: 0.5rem;\n+}\n+\n+tbody td {\n+    width: 100vw;                           /* fill the viewport */\n+        /* fix the width */\n+    min-width: 4rem;\n+    max-width: 4rem;\n+}\n+\n+tbody th {\n+    width: calc(100% - 12rem);              /* width of the entire container less 12rem (192px?) */\n+}\n+\n+tr[class=\"total\"] {                         /* select tr elements with \"total\" class */\n+    border-bottom: 4px double #0a0a23;\n+    font-weight: bold;\n+}\n+\n+tr[class=\"total\"] th {\n+    text-align: left;\n+    padding: 0.5rem 0 0.25rem;\n+}\n"
+                }
+            ],
+            "date": 1697730614382,
+            "name": "Commit-0",
+            "content": "* {\n    background-color: blue;\n}"
+        }
+    ]
+}
