@@ -1,0 +1,298 @@
+{
+    "sourceFile": "BuildingAPiano/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 70,
+            "patches": [
+                {
+                    "date": 1698068644938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698068721714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n html {\n-    box-sizing: border-box;\n+    box-sizing: border-box;         /* reset */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068728930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n html {\n-    box-sizing: border-box;         /* reset */\n+    box-sizing: border-box;         /* reset the box mvdel */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068775002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n html {\n-    box-sizing: border-box;         /* reset the box mvdel */\n+    box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069149448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n+*, ::before, ::after {\n+    \n+}\n+\n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069165623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n *, ::before, ::after {\n-    \n+    box-sizing: inherit;            /*  */\n }\n \n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n"
+                },
+                {
+                    "date": 1698069176627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n *, ::before, ::after {\n-    box-sizing: inherit;            /*  */\n+    box-sizing: inherit;            /* use the same  */\n }\n \n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n"
+                },
+                {
+                    "date": 1698069188132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n *, ::before, ::after {\n-    box-sizing: inherit;            /* use the same  */\n+    box-sizing: inherit;            /* use the same value as the parent element */\n }\n \n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n"
+                },
+                {
+                    "date": 1698069207475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n *, ::before, ::after {\n-    box-sizing: inherit;            /* use the same value as the parent element */\n+    box-sizing: inherit;            /* target elements use the same value as the parent element */\n }\n \n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n"
+                },
+                {
+                    "date": 1698069245526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n *, ::before, ::after {\n-    box-sizing: inherit;            /* target elements use the same value as the parent element */\n+    box-sizing: inherit;            /* targeted elements use the same value as the parent element */\n }\n \n html {\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n\\ No newline at end of file\n-}\n+}\n+\n+#piano {\n+    \n+}\n"
+                },
+                {
+                    "date": 1698069259918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n }\n \n #piano {\n-    \n-}\n\\ No newline at end of file\n+    background-color: \n+}\n"
+                },
+                {
+                    "date": 1698069266739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n }\n \n #piano {\n-    background-color: \n+    background-color: #004\n }\n"
+                },
+                {
+                    "date": 1698069279181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n }\n \n #piano {\n-    background-color: #004\n+    background-color: #00471b;\n }\n"
+                },
+                {
+                    "date": 1698069289532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n }\n \n #piano {\n     background-color: #00471b;\n+    width: 992px;\n }\n"
+                },
+                {
+                    "date": 1698069299219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n \n #piano {\n     background-color: #00471b;\n     width: 992px;\n+    height: 290px;\n }\n"
+                },
+                {
+                    "date": 1698069419147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n #piano {\n     background-color: #00471b;\n     width: 992px;\n     height: 290px;\n+    margin: auto;\n }\n"
+                },
+                {
+                    "date": 1698069468964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,10 @@\n #piano {\n     background-color: #00471b;\n     width: 992px;\n     height: 290px;\n-    margin: auto;\n+    margin: 80px auto;\n }\n+\n+.keys {\n+    \n+}\n"
+                },
+                {
+                    "date": 1698069474543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,6 @@\n     margin: 80px auto;\n }\n \n .keys {\n-    \n+    background-color: ;\n }\n"
+                },
+                {
+                    "date": 1698069486813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,6 @@\n     margin: 80px auto;\n }\n \n .keys {\n-    background-color: ;\n+    background-color: #040404;\n }\n"
+                },
+                {
+                    "date": 1698069494345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,6 @@\n }\n \n .keys {\n     background-color: #040404;\n+    width: ;\n }\n"
+                },
+                {
+                    "date": 1698069501502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,7 @@\n }\n \n .keys {\n     background-color: #040404;\n-    width: ;\n+    width: 949px;\n+    height: 65px;\n }\n"
+                },
+                {
+                    "date": 1698069593122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,7 @@\n \n .keys {\n     background-color: #040404;\n     width: 949px;\n-    height: 65px;\n+    height: 180px;\n+    padding-left: 2px;\n }\n"
+                },
+                {
+                    "date": 1698069670150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     background-color: #00471b;\n     width: 992px;\n     height: 290px;\n     margin: 80px auto;\n+    padding: ;\n }\n \n .keys {\n     background-color: #040404;\n"
+                },
+                {
+                    "date": 1698069678701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     background-color: #00471b;\n     width: 992px;\n     height: 290px;\n     margin: 80px auto;\n-    padding: ;\n+    padding: 90px 20px 0 20px;\n }\n \n .keys {\n     background-color: #040404;\n"
+                },
+                {
+                    "date": 1698069765421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,4 +19,6 @@\n     width: 949px;\n     height: 180px;\n     padding-left: 2px;\n }\n+\n+\n"
+                },
+                {
+                    "date": 1698069806866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,8 @@\n     height: 180px;\n     padding-left: 2px;\n }\n \n-\n+.key {\n+    background-color: #ffffff;\n+    position: relative;\n+}\n"
+                },
+                {
+                    "date": 1698069813445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,6 @@\n \n .key {\n     background-color: #ffffff;\n     position: relative;\n+    width: ;\n }\n"
+                },
+                {
+                    "date": 1698069822492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,6 +23,7 @@\n \n .key {\n     background-color: #ffffff;\n     position: relative;\n-    width: ;\n+    width: 41px;\n+    height: 175px;\n }\n"
+                },
+                {
+                    "date": 1698069869241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,7 @@\n     background-color: #ffffff;\n     position: relative;\n     width: 41px;\n     height: 175px;\n+    margin: 2px;\n+    float: left;\n }\n"
+                },
+                {
+                    "date": 1698069932709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+    /* targeted elements use the same value as the parent element */\n *, ::before, ::after {\n-    box-sizing: inherit;            /* targeted elements use the same value as the parent element */\n+    box-sizing: inherit;\n }\n-\n+    /* reset the box model to not apply default values to margin and padding */\n html {\n-    box-sizing: border-box;         /* reset the box model to not apply default values to margin and padding */\n+    box-sizing: border-box;\n }\n \n #piano {\n     background-color: #00471b;\n@@ -28,4 +29,5 @@\n     height: 175px;\n     margin: 2px;\n     float: left;\n }\n+    /* create black keys */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069943897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,6 @@\n     height: 175px;\n     margin: 2px;\n     float: left;\n }\n-    /* create black keys */\n\\ No newline at end of file\n+    /* create black keys */\n+    .key\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069953541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,5 @@\n     margin: 2px;\n     float: left;\n }\n     /* create black keys */\n-    .key\n\\ No newline at end of file\n+.key.black--key\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069962374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,7 @@\n     margin: 2px;\n     float: left;\n }\n     /* create black keys */\n-.key.black--key\n\\ No newline at end of file\n+.key.black--key::after {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069975295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n     float: left;\n }\n     /* create black keys */\n .key.black--key::after {\n-    \n+    background-color: ;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698069986846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n     float: left;\n }\n     /* create black keys */\n .key.black--key::after {\n-    background-color: ;\n+    background-color: #1d1e22;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070013256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,6 @@\n }\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n+    content: \"\";\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070023929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n }\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n-    content: \"\";\n+    content: \"\";                    /* make  */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070033776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n }\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n-    content: \"\";                    /* make  */\n+    content: \"\";                    /* make the pseudo-elements empty */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070181704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,6 @@\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n     content: \"\";                    /* make the pseudo-elements empty */\n+    position: absolute;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070189437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,6 @@\n .key.black--key::after {\n     background-color: #1d1e22;\n     content: \"\";                    /* make the pseudo-elements empty */\n     position: absolute;\n+    left: -18px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070224595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,7 @@\n     background-color: #1d1e22;\n     content: \"\";                    /* make the pseudo-elements empty */\n     position: absolute;\n     left: -18px;\n+    width: 32px;\n+    height: 60%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698070368457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,6 +36,8 @@\n     content: \"\";                    /* make the pseudo-elements empty */\n     position: absolute;\n     left: -18px;\n     width: 32px;\n-    height: 60%;\n-}\n\\ No newline at end of file\n+    height: 100px;\n+}\n+\n+\n"
+                },
+                {
+                    "date": 1698070425640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,7 @@\n     width: 32px;\n     height: 100px;\n }\n \n-\n+.logo {\n+    \n+}\n"
+                },
+                {
+                    "date": 1698070436743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,6 +40,7 @@\n     height: 100px;\n }\n \n .logo {\n-    \n+    width: 200px;\n+    position: absolute;\n }\n"
+                },
+                {
+                    "date": 1698070443745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,6 @@\n \n .logo {\n     width: 200px;\n     position: absolute;\n+    top: 23px;\n }\n"
+                },
+                {
+                    "date": 1698070482794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     width: 992px;\n     height: 290px;\n     margin: 80px auto;\n     padding: 90px 20px 0 20px;\n+    position: relative;\n }\n \n .keys {\n     background-color: #040404;\n"
+                },
+                {
+                    "date": 1698070520368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     height: 290px;\n     margin: 80px auto;\n     padding: 90px 20px 0 20px;\n     position: relative;\n+    border-radius: 10px;\n }\n \n .keys {\n     background-color: #040404;\n"
+                },
+                {
+                    "date": 1698070546043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n     width: 41px;\n     height: 175px;\n     margin: 2px;\n     float: left;\n+    border-radius: ;\n }\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n"
+                },
+                {
+                    "date": 1698070554223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     width: 41px;\n     height: 175px;\n     margin: 2px;\n     float: left;\n-    border-radius: ;\n+    border-radius: 0 0 3px 3px;\n }\n     /* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n"
+                },
+                {
+                    "date": 1698071101331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n     position: absolute;\n     left: -18px;\n     width: 32px;\n     height: 100px;\n+    border-radius: 0 0 3px 3px;\n }\n \n .logo {\n     width: 200px;\n"
+                },
+                {
+                    "date": 1698071180859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,4 +48,6 @@\n     width: 200px;\n     position: absolute;\n     top: 23px;\n }\n+\n+@media\n"
+                },
+                {
+                    "date": 1698071190039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,5 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media\n+@media (max-width: )\n"
+                },
+                {
+                    "date": 1698071196021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,5 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media (max-width: )\n+@media (max-width: 768px) {}\n"
+                },
+                {
+                    "date": 1698071236033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,9 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media (max-width: 768px) {}\n+@media (max-width: 768px) {\n+    #piano {\n+        width: ;\n+    }\n+}\n"
+                },
+                {
+                    "date": 1698071281108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,7 +51,10 @@\n }\n \n @media (max-width: 768px) {\n     #piano {\n-        width: ;\n+        width: 358px;\n     }\n+    .keys {\n+        width: 318px;\n+    }\n }\n"
+                },
+                {
+                    "date": 1698071297715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n @media (max-width: 768px) {\n     #piano {\n         width: 358px;\n     }\n+    \n     .keys {\n         width: 318px;\n     }\n }\n"
+                },
+                {
+                    "date": 1698071322891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n-    /* targeted elements use the same value as the parent element */\n-*, ::before, ::after {\n+/* targeted elements use the same value as the parent element */\n+*,\n+::before,\n+::after {\n     box-sizing: inherit;\n }\n-    /* reset the box model to not apply default values to margin and padding */\n+/* reset the box model to not apply default values to margin and padding */\n html {\n     box-sizing: border-box;\n }\n \n@@ -32,12 +34,12 @@\n     margin: 2px;\n     float: left;\n     border-radius: 0 0 3px 3px;\n }\n-    /* create black keys */\n+/* create black keys */\n .key.black--key::after {\n     background-color: #1d1e22;\n-    content: \"\";                    /* make the pseudo-elements empty */\n+    content: \"\"; /* make the pseudo-elements empty */\n     position: absolute;\n     left: -18px;\n     width: 32px;\n     height: 100px;\n@@ -53,9 +55,9 @@\n @media (max-width: 768px) {\n     #piano {\n         width: 358px;\n     }\n-    \n+\n     .keys {\n         width: 318px;\n     }\n }\n"
+                },
+                {
+                    "date": 1698071367064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,5 +59,9 @@\n \n     .keys {\n         width: 318px;\n     }\n+\n+    .logo {\n+        width: ;\n+    }\n }\n"
+                },
+                {
+                    "date": 1698071380818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,7 +61,7 @@\n         width: 318px;\n     }\n \n     .logo {\n-        width: ;\n+        width: 150px;\n     }\n }\n"
+                },
+                {
+                    "date": 1698071442063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n     background-color: #040404;\n     width: 949px;\n     height: 180px;\n     padding-left: 2px;\n+    overflow: hidden;\n }\n \n .key {\n     background-color: #ffffff;\n"
+                },
+                {
+                    "date": 1698071549830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media (max-width: 768px) {\n+@media (max-width: 768px) and  {\n     #piano {\n         width: 358px;\n     }\n \n"
+                },
+                {
+                    "date": 1698071569818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media (max-width: 768px) and  {\n+@media (min-width: 768px) and (max-width: ) {\n     #piano {\n         width: 358px;\n     }\n \n"
+                },
+                {
+                    "date": 1698071585931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     position: absolute;\n     top: 23px;\n }\n \n-@media (min-width: 768px) and (max-width: ) {\n+@media (max-width: 768px) {\n     #piano {\n         width: 358px;\n     }\n \n"
+                },
+                {
+                    "date": 1698071609665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,5 @@\n     .logo {\n         width: 150px;\n     }\n }\n+/* target  */\n"
+                },
+                {
+                    "date": 1698071621258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,5 @@\n     .logo {\n         width: 150px;\n     }\n }\n-/* target  */\n+/* targets a display between  */\n"
+                },
+                {
+                    "date": 1698071628408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,5 @@\n     .logo {\n         width: 150px;\n     }\n }\n-/* targets a display between  */\n+/* targets a display between 769px and  */\n"
+                },
+                {
+                    "date": 1698071672126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     width: 200px;\n     position: absolute;\n     top: 23px;\n }\n-\n+/* targets a display below 768px */\n @media (max-width: 768px) {\n     #piano {\n         width: 358px;\n     }\n@@ -65,5 +65,6 @@\n     .logo {\n         width: 150px;\n     }\n }\n-/* targets a display between 769px and  */\n+/* targets a display between 769px and 1199px */\n+@media ()\n"
+                },
+                {
+                    "date": 1698071694955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,5 +66,5 @@\n         width: 150px;\n     }\n }\n /* targets a display between 769px and 1199px */\n-@media ()\n+@media (min-width: 769px) and (max-width: 1199px) {}\n"
+                },
+                {
+                    "date": 1698071775938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,5 +66,9 @@\n         width: 150px;\n     }\n }\n /* targets a display between 769px and 1199px */\n-@media (min-width: 769px) and (max-width: 1199px) {}\n+@media (min-width: 769px) and (max-width: 1199px) {\n+    #piano {\n+        width: 400px;\n+    }\n+}\n"
+                },
+                {
+                    "date": 1698071790643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,11 @@\n }\n /* targets a display between 769px and 1199px */\n @media (min-width: 769px) and (max-width: 1199px) {\n     #piano {\n-        width: 400px;\n+        width: 675px;\n     }\n+\n+    .keys {\n+        width: 580px;\n+    }\n }\n"
+                },
+                {
+                    "date": 1698071797846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,7 +72,7 @@\n         width: 675px;\n     }\n \n     .keys {\n-        width: 580px;\n+        width: 633px;\n     }\n }\n"
+                }
+            ],
+            "date": 1698068644938,
+            "name": "Commit-0",
+            "content": "html {\n    box-sizing: border-box;\n}"
+        }
+    ]
+}

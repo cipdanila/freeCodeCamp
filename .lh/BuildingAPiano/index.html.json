@@ -1,0 +1,62 @@
+{
+    "sourceFile": "BuildingAPiano/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1698068094890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698068121999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <title>Document</title>\n+    <title>Piano</title>\n </head>\n <body>\n     \n </body>\n"
+                },
+                {
+                    "date": 1698068298454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Piano</title>\n </head>\n <body>\n-    \n+    <div id=\"piano\"></div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068319450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Piano</title>\n </head>\n <body>\n-    <div id=\"piano\"></div>\n+    <div id=\"piano\">\n+        <div class=\"keys\"></div>\n+    </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068414426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n     <title>Piano</title>\n </head>\n <body>\n     <div id=\"piano\">\n-        <div class=\"keys\"></div>\n+        <div class=\"keys\">\n+            <div class=\"keys\"></div>\n+        </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068429054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,15 @@\n </head>\n <body>\n     <div id=\"piano\">\n         <div class=\"keys\">\n-            <div class=\"keys\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068507253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,14 @@\n <body>\n     <div id=\"piano\">\n         <div class=\"keys\">\n             <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n             <div class=\"key\"></div>\n             <div class=\"key\"></div>\n             <div class=\"key\"></div>\n-            <div class=\"key\"></div>\n-            <div class=\"key\"></div>\n-            <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068516699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n     <div id=\"piano\">\n         <div class=\"keys\">\n             <div class=\"key\"></div>\n             <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n             <div class=\"key\"></div>\n-            <div class=\"key\"></div>\n-            <div class=\"key\"></div>\n             <div class=\"key black--key\"></div>\n             <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068566803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,22 @@\n             <div class=\"key\"></div>\n             <div class=\"key black--key\"></div>\n             <div class=\"key black--key\"></div>\n             <div class=\"key black--key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n+            <div class=\"key black--key\"></div>\n         </div>\n     </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1698068598065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n <head>\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Piano</title>\n+    <link rel=\"stylesheet\" href=\"styles.css\">\n </head>\n <body>\n     <div id=\"piano\">\n         <div class=\"keys\">\n"
+                },
+                {
+                    "date": 1698068604872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n <head>\n     <meta charset=\"UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Piano</title>\n-    <link rel=\"stylesheet\" href=\"styles.css\">\n+    <link rel=\"stylesheet\" href=\"./styles.css\">\n </head>\n <body>\n     <div id=\"piano\">\n         <div class=\"keys\">\n"
+                },
+                {
+                    "date": 1698070347879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <link rel=\"stylesheet\" href=\"./styles.css\">\n </head>\n <body>\n     <div id=\"piano\">\n+        <img class=\"logo\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\" alt=\"freeCodeCamp Logo\">\n         <div class=\"keys\">\n             <div class=\"key\"></div>\n             <div class=\"key black--key\"></div>\n             <div class=\"key black--key\"></div>\n"
+                }
+            ],
+            "date": 1698068094890,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n</head>\n<body>\n    \n</body>\n</html>"
+        }
+    ]
+}
