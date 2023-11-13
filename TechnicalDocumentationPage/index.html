@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testing Page</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Programming Languages</header>
+
+            <button class="accordion">Overview</button>
+            <div class="panel">
+                <ul class="submenu">
+                    <li>
+                        <a href="#Introduction" class="nav-link"
+                            >Introduction</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Purpose" class="nav-link"
+                            >Purpose and Usage</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Configuration" class="nav-link"
+                            >Configuration</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Hello_world" class="nav-link"
+                            >Hello world!</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <button class="accordion">Basic</button>
+            <div class="panel">
+                <ul class="submenu">
+                    <li>
+                        <a href="#Variables" class="nav-link">Variables</a>
+                    </li>
+                    <li>
+                        <a href="#Data_types" class="nav-link"
+                            >Data types</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Input_output" class="nav-link"
+                            >Input/Output</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Operators" class="nav-link">Operators</a>
+                    </li>
+                    <li>
+                        <a href="#Statements" class="nav-link"
+                            >Control Statments</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Built_in_objects" class="nav-link"
+                            >Built-in Objects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#Functions" class="nav-link">Functions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="accordion">References</button>
+            <div class="panel">
+                <ul class="submenu">
+                    <li>
+                        <a href="#References" class="nav-link">References</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        A programming language is a system of notation for
+                        writing computer programs. Most programming languages
+                        are text-based formal languages, but they may also be
+                        graphical. They are a kind of computer language.<sup
+                            id="cite_ref-1"
+                            ><a href="#cite_note-1">[1]</a></sup
+                        >
+                    </p>
+                    <p>
+                        Programming languages are often categorized based on
+                        several factors, such as the type of language,
+                        application domain, level of abstraction, and
+                        programming paradigm. Here are some common
+                        categories:<sup id="cite_ref-2"
+                            ><a href="#cite_note-2">[2]</a></sup
+                        >
+                    </p>
+                    <ol>
+                        <li>
+                            <h3>Based on <u>Data Types</u></h3>
+                            <ul>
+                                <li>
+                                    <strong>Static Data Type Languages:</strong>
+                                    These languages require specifying the data
+                                    type for each variable before it is used
+                                    (e.g. <span class="C_color">C</span>,
+                                    <span class="Cpp_color">C++</span>,
+                                    <span class="Csharp_color"
+                                        ><span class="Csharp_color"
+                                            >C#</span
+                                        ></span
+                                    >, <span class="Java_color">Java</span>,
+                                    <span class="Rust_color">Rust</span>).
+                                </li>
+                                <li>
+                                    <strong
+                                        >Dynamic Data Type Languages:</strong
+                                    >
+                                    They do not require specifying the data
+                                    type; it is determined at runtime (e.g.
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="JS_color">JavaScript</span>,
+                                    <span class="Ruby_color">Ruby</span>,
+                                    <span class="PHP_color">PHP</span>,
+                                    <span class="Perl_color">Perl</span>).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Based on <u>Programming Paradigm</u></h3>
+                            <ul>
+                                <li>
+                                    <strong>Procedural:</strong> Focuses on
+                                    sequences of instructions executed in order
+                                    (e.g. <span class="C_color">C</span>,
+                                    Pascal,
+                                    <span class="Fortran_color">Fortran</span>,
+                                    COBOL).
+                                </li>
+                                <li>
+                                    <strong>Object-Oriented:</strong> Relies on
+                                    the concept of objects containing data and
+                                    functions that operate on that data (e.g.
+                                    <span class="Java_color">Java</span>,
+                                    <span class="Cpp_color">C++</span>,
+                                    <span class="Csharp_color">C#</span>,
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="PHP_color">PHP</span>).
+                                </li>
+                                <li>
+                                    <strong>Functional:</strong> Emphasizes
+                                    evaluating expressions and mathematical
+                                    functions (e.g.
+                                    <span data-char="Has" class="Has_color"
+                                        >Haskell</span
+                                    >, Scheme,
+                                    <span class="Lisp_color">Lisp</span>,
+                                    <span class="Erlang_color">Erlang</span>).
+                                </li>
+                                <li>
+                                    <strong>Logic-Based:</strong> Uses logical
+                                    reasoning to solve problems (e.g. Prolog,
+                                    Datalog,
+                                    <span class="Mercury_color">Mercury</span>).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Based on <u>Application Domain</u></h3>
+                            <ul>
+                                <li>
+                                    <strong>Web Development:</strong> Languages
+                                    specialized for web development, such as
+                                    <span class="JS_color">JavaScript</span>,
+                                    HTML, CSS,
+                                    <span class="PHP_color">PHP</span>, etc.
+                                </li>
+                                <li>
+                                    <strong
+                                        >Data Science and Machine
+                                        Learning:</strong
+                                    >
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="R_color">R</span>,
+                                    <span class="Scala_color">Scala</span>, etc.
+                                </li>
+                                <li>
+                                    <strong>Embedded Systems:</strong>
+                                    <span class="C_color">C</span>,
+                                    <span class="Cpp_color">C++</span>, Assembly
+                                    Language, etc.
+                                </li>
+                                <li>
+                                    <strong>Automation:</strong>
+                                    <span class="PS_color">PowerShell</span>,
+                                    <span class="Bash_color">Bash</span>, etc.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Based on <u>Level of Abstraction</u></h3>
+                            <ul>
+                                <li>
+                                    <strong>High-Level Languages:</strong> Offer
+                                    a high level of abstraction, allowing
+                                    programmers to write more concise and
+                                    understandable code (e.g.
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="Java_color">Java</span>,
+                                    <span class="Csharp_color">C#</span>,
+                                    <span class="JS_color">JavaScript</span>,
+                                    <span class="Ruby_color">Ruby</span>,
+                                    <span class="PHP_color">PHP</span>).
+                                </li>
+                                <li>
+                                    <strong>Low-Level Languages:</strong> Closer
+                                    to machine language and provide finer
+                                    control over hardware (e.g.
+                                    <span class="C_color">C</span>,
+                                    <span class="Cpp_color">C++</span>, Assembly
+                                    Language,
+                                    <span class="Rust_color"
+                                        ><span class="Rust_color"
+                                            >Rust</span
+                                        ></span
+                                    >).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Markup and Description Languages</h3>
+                            <ul>
+                                <li>
+                                    <strong
+                                        >HTML (Hypertext Markup
+                                        Language):</strong
+                                    >
+                                    Used to create web pages.
+                                </li>
+                                <li>
+                                    <strong
+                                        >XML (Extensible Markup
+                                        Language):</strong
+                                    >
+                                    Used to structure and store data.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Scripting vs. Compiled Languages</h3>
+                            <ul>
+                                <li>
+                                    <strong>Scripting Languages:</strong> Code
+                                    is interpreted directly and does not require
+                                    a compilation step before execution (e.g.
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="JS_color">JavaScript</span>,
+                                    <span class="PHP_color">PHP</span>).
+                                </li>
+                                <li>
+                                    <strong>Compiled Languages:</strong> Code is
+                                    transformed into machine language using a
+                                    compiler before execution (e.g.
+                                    <span class="C_color">C</span>,
+                                    <span class="Cpp_color">C++</span>,
+                                    <span class="Csharp_color">C#</span>,
+                                    <span class="Java_color">Java</span>).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>
+                                Languages for Rapid Application Development
+                                (RAD)
+                            </h3>
+                            <p>
+                                These allow programmers to quickly create
+                                applications, reducing development complexity:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >
+                                (with libraries like Django and Flask),
+                                <span class="Ruby_color">Ruby</span> (with
+                                frameworks like
+                                <span class="Ruby_color">Ruby</span> on Rails),
+                                Visual Basic,
+                                <span class="Delphi_color">Delphi</span>,
+                                <span class="PHP_color">PHP</span> (with
+                                frameworks like Laravel, Symfony or
+                                CodeIgniter).
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Languages for Concurrent and Parallel
+                                Programming
+                            </h3>
+                            <p>
+                                Designed to handle concurrent operations more
+                                efficiently:
+                                <span class="Java_color">Java</span> (with
+                                <span class="Java_color">Java</span> Concurrency
+                                library),
+                                <span class="Csharp_color">C#</span> (with
+                                Parallel Extensions),
+                                <span class="Go_color">Go</span>,
+                                <span class="Erlang_color">Erlang</span>.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Historical vs. Contemporary Languages</h3>
+                            <p>
+                                Some terms are used to classify languages that
+                                were significant in the past but may be less
+                                used today:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Historical Languages:</strong>
+                                    <span class="Fortran_color">Fortran</span>,
+                                    COBOL, ALGOL,
+                                    <span class="Lisp_color">Lisp</span>.
+                                </li>
+                                <li>
+                                    <strong>Contemporary Languages:</strong>
+                                    <span data-char="Pyt" class="Pyt_color"
+                                        >Python</span
+                                    >, <span class="Java_color">Java</span>,
+                                    <span class="JS_color">JavaScript</span>,
+                                    <span class="Csharp_color">C#</span>,
+                                    <span class="PHP_color">PHP</span>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <h1>Programming Language Categories</h1>
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Category</th>
+                            <th>Examples of Programming Languages</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td rowspan="2">Based on Data Types</td>
+                            <td>
+                                Static Data Type Languages:
+                                <span class="C_color">C</span>,
+                                <span class="Cpp_color">C++</span>,
+                                <span class="Java_color">Java</span>,
+                                <span class="Csharp_color">C#</span>,
+                                <span class="Rust_color">Rust</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Dynamic Data Type Languages:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="JS_color">JavaScript</span>,
+                                <span class="Ruby_color">Ruby</span>,
+                                <span class="PHP_color">PHP</span>,
+                                <span class="Perl_color">Perl</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">2</td>
+                            <td rowspan="4">Based on Programming Paradigm</td>
+                            <td>
+                                Procedural: <span class="C_color">C</span>,
+                                Pascal,
+                                <span class="Fortran_color">Fortran</span>,
+                                COBOL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Object-Oriented:
+                                <span class="Java_color">Java</span>,
+                                <span class="Cpp_color">C++</span>,
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="Csharp_color">C#</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Functional:
+                                <span data-char="Has" class="Has_color"
+                                    >Haskell</span
+                                >, Scheme, <span class="Lisp_color">Lisp</span>,
+                                <span class="Erlang_color">Erlang</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Logic-Based: Prolog, Datalog,
+                                <span class="Mercury_color">Mercury</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">3</td>
+                            <td rowspan="4">Based on Application Domain</td>
+                            <td>
+                                Web Development:
+                                <span class="JS_color">JavaScript</span>, HTML,
+                                CSS, <span class="PHP_color">PHP</span>, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Data Science and Machine Learning:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="R_color">R</span>,
+                                <span class="Scala_color">Scala</span>, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Embedded Systems:
+                                <span class="C_color">C</span>,
+                                <span class="Cpp_color">C++</span>, Assembly
+                                Language, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Automation:
+                                <span class="PS_color">PowerShell</span>,
+                                <span class="Bash_color">Bash</span>, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">4</td>
+                            <td rowspan="2">Based on Level of Abstraction</td>
+                            <td>
+                                High-Level Languages:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="Java_color">Java</span>,
+                                <span class="Csharp_color">C#</span>,
+                                <span class="JS_color">JavaScript</span>,
+                                <span class="Ruby_color">Ruby</span>,
+                                <span class="PHP_color">PHP</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Low-Level Languages:
+                                <span class="C_color">C</span>,
+                                <span class="Cpp_color">C++</span>, Assembly
+                                Language, <span class="Rust_color">Rust</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">5</td>
+                            <td rowspan="2">
+                                Markup and Description Languages
+                            </td>
+                            <td>
+                                Used to create web pages: HTML (Hypertext Markup
+                                Language)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Used to structure and store data: XML
+                                (Extensible Markup Language)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">6</td>
+                            <td rowspan="2">
+                                Scripting vs. Compiled Languages
+                            </td>
+                            <td>
+                                Scripting Languages:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="JS_color">JavaScript</span>,
+                                <span class="PHP_color">PHP</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Compiled Languages:
+                                <span class="C_color">C</span>,
+                                <span class="Cpp_color">C++</span>,
+                                <span class="Csharp_color">C#</span>,
+                                <span class="Java_color">Java</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                Languages for Rapid Application Development
+                                (RAD)
+                            </td>
+                            <td>
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >Python,
+                                <span class="Ruby_color"
+                                    ><span class="Ruby_color">Ruby</span></span
+                                >, Visual Basic,
+                                <span class="Delphi_color">Delphi</span>,
+                                <span class="PHP_color">PHP</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                Languages for Concurrent and Parallel
+                                Programming
+                            </td>
+                            <td>
+                                <span class="Java_color">Java</span>,
+                                <span class="Csharp_color">C#</span>,
+                                <span class="Erlang_color">Erlang</span>,
+                                <span class="Go_color">Go</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9</td>
+                            <td rowspan="2">
+                                Historical vs. Contemporary Languages
+                            </td>
+                            <td>
+                                Historical Languages:
+                                <span class="Fortran_color">Fortran</span>,
+                                COBOL, ALGOL,
+                                <span class="Lisp_color">Lisp</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Contemporary Languages:
+                                <span data-char="Pyt" class="Pyt_color"
+                                    >Python</span
+                                >, <span class="Java_color">Java</span>,
+                                <span class="JS_color">JavaScript</span>,
+                                <span class="Csharp_color">C#</span>,
+                                <span class="PHP_color">PHP</span>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <section id="Configuration" class="main-section">
+                <header>Configuration</header>
+                <article>
+                    <article>
+                    <p>To illustrate a few lines of code, we need a text editor or an Integrated Development Environment (IDE).</p>
+                    <p>A text editor is a type of computer program that edits plain text.
+                        Such programs are sometimes known as "notepad" software.
+                        Text editors are provided with operating systems and software development packages,
+                        and can be used to change files such as configuration files, documentation files and programming language
+                        source code. <sup id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>
+                        Here are some of the most well-known text editors: <sup id="cite_ref-4"><a href="#cite_note-4">[4]</a></sup>
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>License</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Based on Data Types</td>
+                            <td>
+                                Static Data Type Languages:
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <section id="Hello_world" class="main-section">
+                <header>Hello world</header>
+                <article></article>
+            </section>
+            <section id="Variables" class="main-section">
+                <header>Variables</header>
+                <article></article>
+            </section>
+            <section id="Data_types" class="main-section">
+                <header>Data Types</header>
+                <article></article>
+            </section>
+            <section id="Input_output" class="main-section">
+                <header>Input/Output</header>
+                <article></article>
+            </section>
+            <section id="Operators" class="main-section">
+                <header>Operators</header>
+                <article></article>
+            </section>
+            <section id="Statements" class="main-section">
+                <header>Statements</header>
+                <article></article>
+            </section>
+            <section id="Built_in_objects" class="main-section">
+                <header>Built-in Objects</header>
+                <article></article>
+            </section>
+            <section id="Functions" class="main-section">
+                <header>Functions</header>
+                <article></article>
+            </section>
+            <section id="References" class="main-section">
+                <header>References</header>
+                <article>
+                    <ol class="references">
+                        <li id="cite_note-1">
+                            <span class="cite_backlink">
+                                <b>
+                                    <a href="#cite_ref-1" aria-label="Jump up" title="Jump up">^</a>
+                                </b>
+                            </span>
+                            <a
+                                href="https://en.wikipedia.org/wiki/Programming_language"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Programming language (Wikipedia)</a
+                            >
+                        </li>
+                        <li id="cite_note-2">
+                            <span class="cite_backlink">
+                                <b>
+                                    <a href="#cite_ref-2" aria-label="Jump up" title="Jump up">^</a>
+                                </b>
+                            </span>
+                            <a
+                                href="https://chat.openai.com/c/b1cd7649-facf-45c2-b505-927467d2ea21"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >ChatGPT 3.5 (https://openai.com/)</a
+                            >
+                        </li>
+                        <li id="cite_note-3">
+                            <span class="cite_backlink">
+                                <b>
+                                    <a href="#cite_ref-3" aria-label="Jump up" title="Jump up">^</a>
+                                </b>
+                            </span>
+                            <a
+                                href="https://en.wikipedia.org/wiki/Text_editor"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Text editor (Wikipedia)</a
+                            >
+                        </li>
+                        <li id="cite_note-4">
+                            <span class="cite_backlink">
+                                <b>
+                                    <a href="#cite_ref-4" aria-label="Jump up" title="Jump up">^</a>
+                                </b>
+                            </span>
+                            <a
+                                href="https://en.wikipedia.org/wiki/List_of_text_editors"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >List of text editors (Wikipedia)</a
+                            >
+                        </li>
+                    </ol>
+                </article>
+            </section>
+        </main>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".submenu li").click(function (e) {
+                    $(".submenu li").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+{
+    "sourceFile": "TechnicalDocumentationPage/test/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1699546252824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699546277239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     color: #fff;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n-    float: left;\n+    align-content: flex-start;\n }\n \n .sidebar h2 {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1699546291616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     color: #fff;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n-    align-content: flex-start;\n+    float: left;\n }\n \n .sidebar h2 {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1699546303196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n     color: #fff;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n-    float: left;\n }\n \n .sidebar h2 {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1699547900614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     height: 100vh;\n     background-color: #f5f5f5;\n }\n \n-.sidebar {\n+.navbar {\n     background-color: #333;\n     color: #fff;\n     width: 250px;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1699547920815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     height: 100vh;\n     background-color: #f5f5f5;\n }\n \n-.navbar {\n+#navbar {\n     background-color: #333;\n     color: #fff;\n     width: 250px;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1699547950277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,23 +15,23 @@\n     height: 100%;\n     padding-top: 20px;\n }\n \n-.sidebar h2 {\n+.navbar h2 {\n     text-align: center;\n }\n \n-.sidebar ul {\n+.navbar ul {\n     list-style-type: none;\n     padding: 0;\n }\n \n-.sidebar li {\n+.navbar li {\n     padding: 10px;\n     position: relative;\n }\n \n-.sidebar a {\n+.navbar a {\n     color: #fff;\n     text-decoration: none;\n }\n \n@@ -41,8 +41,8 @@\n     left: 100%;\n     top: 0;\n }\n \n-.sidebar li:hover .submenu {\n+.navbar li:hover .submenu {\n     display: block;\n     background-color: #333;\n }\n"
+                },
+                {
+                    "date": 1699547999393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,23 +15,23 @@\n     height: 100%;\n     padding-top: 20px;\n }\n \n-.navbar h2 {\n+#navbar h2 {\n     text-align: center;\n }\n \n-.navbar ul {\n+#navbar ul {\n     list-style-type: none;\n     padding: 0;\n }\n \n-.navbar li {\n+#navbar li {\n     padding: 10px;\n     position: relative;\n }\n \n-.navbar a {\n+#navbar a {\n     color: #fff;\n     text-decoration: none;\n }\n \n@@ -41,8 +41,8 @@\n     left: 100%;\n     top: 0;\n }\n \n-.navbar li:hover .submenu {\n+#navbar li:hover .submenu {\n     display: block;\n     background-color: #333;\n }\n"
+                },
+                {
+                    "date": 1699548043584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     height: 100%;\n     padding-top: 20px;\n }\n \n-#navbar h2 {\n+#navbar header {\n     text-align: center;\n }\n \n #navbar ul {\n"
+                },
+                {
+                    "date": 1699548104187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n }\n \n #navbar header {\n     text-align: center;\n+    font-size: 1.8em;\n }\n \n #navbar ul {\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1699548123876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,13 @@\n     padding-top: 20px;\n }\n \n #navbar header {\n+    color: #374151;\n+    margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n+    font-weight: thin;;\n }\n \n #navbar ul {\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1699548156854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     background-color: #f5f5f5;\n }\n \n #navbar {\n-    background-color: #333;\n+    background-color: #f3f4f6;\n     color: #fff;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n"
+                },
+                {
+                    "date": 1699548183268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n #navbar {\n     background-color: #f3f4f6;\n-    color: #fff;\n+    color: #4d4e53;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n }\n"
+                },
+                {
+                    "date": 1699548203471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     position: relative;\n }\n \n #navbar a {\n-    color: #fff;\n+    color: inherit;\n     text-decoration: none;\n }\n \n .submenu {\n"
+                },
+                {
+                    "date": 1699548241838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,10 @@\n     color: #4d4e53;\n     width: 250px;\n     height: 100%;\n     padding-top: 20px;\n+    border-right: solid;\n+    border-color: rgba(0, 22, 22, 0.4);\n }\n \n #navbar header {\n     color: #374151;\n"
+                },
+                {
+                    "date": 1699548264965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n #navbar {\n     background-color: #f3f4f6;\n     color: #4d4e53;\n-    width: 250px;\n+    width: 200px;\n     height: 100%;\n     padding-top: 20px;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n"
+                },
+                {
+                    "date": 1699548789247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n }\n \n #navbar li:hover .submenu {\n     display: block;\n-    background-color: #333;\n+    background-color: #D1D5DB;\n }\n"
+                },
+                {
+                    "date": 1699548885887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n #navbar {\n     background-color: #f3f4f6;\n-    color: #4d4e53;\n+    color: #374151;\n     width: 200px;\n     height: 100%;\n     padding-top: 20px;\n     border-right: solid;\n"
+                },
+                {
+                    "date": 1699549069920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     color: #374151;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n-    font-weight: thin;;\n+    font-weight: thin;\n }\n \n #navbar ul {\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1699549948136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,38 +7,32 @@\n     height: 100vh;\n     background-color: #f5f5f5;\n }\n \n-#navbar {\n-    background-color: #f3f4f6;\n-    color: #374151;\n-    width: 200px;\n+.sidebar {\n+    background-color: #333;\n+    color: #fff;\n+    width: 250px;\n     height: 100%;\n     padding-top: 20px;\n-    border-right: solid;\n-    border-color: rgba(0, 22, 22, 0.4);\n }\n \n-#navbar header {\n-    color: #374151;\n-    margin: 10px;\n+.sidebar h2 {\n     text-align: center;\n-    font-size: 1.8em;\n-    font-weight: thin;\n }\n \n-#navbar ul {\n+.sidebar ul {\n     list-style-type: none;\n     padding: 0;\n }\n \n-#navbar li {\n+.sidebar li {\n     padding: 10px;\n     position: relative;\n }\n \n-#navbar a {\n-    color: inherit;\n+.sidebar a {\n+    color: #fff;\n     text-decoration: none;\n }\n \n .submenu {\n@@ -47,8 +41,7 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover .submenu {\n+.sidebar li:hover .submenu {\n     display: block;\n-    background-color: #D1D5DB;\n }\n"
+                },
+                {
+                    "date": 1699549997816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,6 @@\n }\n \n .sidebar li:hover .submenu {\n     display: block;\n+    background-color: #333;\n }\n"
+                }
+            ],
+            "date": 1699546252824,
+            "name": "Commit-0",
+            "content": "body {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: #f5f5f5;\n}\n\n.sidebar {\n    background-color: #333;\n    color: #fff;\n    width: 250px;\n    height: 100%;\n    padding-top: 20px;\n    float: left;\n}\n\n.sidebar h2 {\n    text-align: center;\n}\n\n.sidebar ul {\n    list-style-type: none;\n    padding: 0;\n}\n\n.sidebar li {\n    padding: 10px;\n    position: relative;\n}\n\n.sidebar a {\n    color: #fff;\n    text-decoration: none;\n}\n\n.submenu {\n    display: none;\n    position: absolute;\n    left: 100%;\n    top: 0;\n}\n\n.sidebar li:hover .submenu {\n    display: block;\n    background-color: #333;\n}\n"
+        }
+    ]
+}

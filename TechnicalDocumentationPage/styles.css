@@ -1,0 +1,324 @@
+html,
+body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Style to all active elements with a "minus" sign except submenu class name */
+.active:not(.submenu li)::after {
+    content: '\2212';
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* fixed side navbar, full height */
+#navbar {
+    position: fixed;
+    background-color: #f3f4f6;
+    color: #374151;
+    width: 200px;
+    height: 100%;
+    padding-top: 20px;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+    color: #374151;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    padding: 10px;
+    position: relative;
+}
+
+#navbar a {
+    color: #374151;
+    text-decoration: none;
+}
+
+#navbar li:hover {
+    background-color: #d1d5db;
+    border-radius: 16px;
+}
+
+#navbar li:hover .submenu {
+    display: block;
+    background-color: #f3f4f6;
+}
+
+#navbar li.active {
+    background-color: #d1d5db;
+    border-radius: 16px;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.C_color {
+    color: #abbbce;
+    font-weight: 700;
+}
+
+.Cpp_color {
+    background-image: linear-gradient(to right, #659bd3, #004482);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Csharp_color {
+    background: #866ae2;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Java_color {
+    color: #007396;
+    font-weight: 700;
+}
+
+.Rust_color {
+    color: #000000;
+    font-weight: 700;
+}
+
+.JS_color {
+    color: #f7df1e;
+    font-weight: 700;
+}
+
+.Ruby_color {
+    color: #cc342d;
+    font-weight: 700;
+}
+
+.PHP_color {
+    color: #4f5d95;
+    font-weight: 700;
+}
+
+.Perl_color {
+    color: #ff481e;
+    font-weight: 700;
+}
+
+.Fortran_color {
+    color: #0073e6;
+    font-weight: 700;
+}
+
+.R_color {
+    color: #1b5eaf;
+    font-weight: 700;
+}
+
+.Scala_color {
+    color: #db3431;
+    font-weight: 700;
+}
+
+.PS_color {
+    color: #012456;
+    font-weight: 700;
+}
+
+.Bash_color {
+    color: #3e474a;
+    font-weight: 700;
+}
+
+.Mercury_color {
+    color: #6a6a6a;
+    font-weight: 700;
+}
+
+.Pyt_color {
+    display: inline-block;
+    position: relative;
+    color: #ffe464;
+    font-weight: 700;
+}
+
+.Pyt_color::before {
+    content: attr(data-char);
+    position: absolute;
+    overflow: hidden;
+    color: #306998;
+    font-weight: 700;
+}
+
+.Has_color {
+    display: inline-block;
+    position: relative;
+    color: #8f4e8b;
+    font-weight: 700;
+}
+
+.Has_color::before {
+    content: attr(data-char);
+    position: absolute;
+    overflow: hidden;
+    color: #5e5086;
+    font-weight: 700;
+}
+
+.Lisp_color {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Erlang_color {
+    color: #a90432;
+    font-weight: 700;
+}
+
+.Go_color {
+    color: #79d4fd;
+    font-weight: 700;
+}
+
+.Delphi_color {
+    background-image: linear-gradient(to right, #f32232, #a0061a);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.cite_backlink a {
+    padding: 0 5px 0 2px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
+
+

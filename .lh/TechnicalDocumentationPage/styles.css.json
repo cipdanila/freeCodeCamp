@@ -1,0 +1,1018 @@
+{
+    "sourceFile": "TechnicalDocumentationPage/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 250,
+            "patches": [
+                {
+                    "date": 1698426072448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698426088427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n header {\n     color: black;\n     margin: 10px;\n     text-align: center;\n-    font-size: 2.5em;\n+    font-size: 1.8em;\n     font-weight: thin;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1698697835795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,13 @@\n     font-size: 1.8em;\n     font-weight: thin;\n }\n \n+.sidebar_wrapper {\n+    max-width: calc(20% - 2px);\n+    min-width: calc(20% - 2px);\n+}\n+\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1698698000590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,8 @@\n     font-size: 1.8em;\n     font-weight: thin;\n }\n \n-.sidebar_wrapper {\n-    max-width: calc(20% - 2px);\n-    min-width: calc(20% - 2px);\n-}\n-\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1698698109390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 300px;\n+    width: 200px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n }\n"
+                },
+                {
+                    "date": 1698698123802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 200px;\n+    width: 1200px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n }\n"
+                },
+                {
+                    "date": 1698698132492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 1200px;\n+    width: 300px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n }\n"
+                },
+                {
+                    "date": 1698698140075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 300px;\n+    width: 200px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n }\n"
+                },
+                {
+                    "date": 1698698188194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     width: 200px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n+    z-index: 1;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698698198999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n+    overflow: hidden;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698698209648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n+    padding-top: 20px;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698772906638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-color: #ffffff;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n-\n+    \n #navbar {\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n"
+                },
+                {
+                    "date": 1698772923900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-color: #ffffff;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n-    \n+    /* fixed side navbar, full height */\n #navbar {\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n"
+                },
+                {
+                    "date": 1698773110159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar ul {\n+/* #navbar ul {\n     height: 88%;\n     padding: 0;\n     overflow-y: auto;\n     overflow-x: hidden;\n@@ -46,9 +46,9 @@\n     border-top: 1px solid;\n     list-style: none;\n     position: relative;\n     width: 100%;\n-}\n+} */\n \n #navbar a {\n     display: block;\n     padding: 10px 30px;\n"
+                },
+                {
+                    "date": 1698773145438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n #navbar a {\n     display: block;\n     padding: 10px 30px;\n-    color: #4d4e53;\n+    color: red;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1698773152426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n #navbar a {\n     display: block;\n     padding: 10px 30px;\n-    color: red;\n+    color: #4d4e53;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1698773171166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n #navbar a {\n     display: block;\n     padding: 10px 30px;\n-    color: #4d4e53;\n+    color: #818818;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1698773179064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n #navbar a {\n     display: block;\n     padding: 10px 30px;\n-    color: #818818;\n+    color: #818181;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1698774258967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,12 +48,12 @@\n     position: relative;\n     width: 100%;\n } */\n \n-#navbar a {\n+#navbar a, .dropdown-btn {\n     display: block;\n     padding: 10px 30px;\n-    color: #818181;\n+    color: #4d4e53;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1698774303023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,16 +48,18 @@\n     position: relative;\n     width: 100%;\n } */\n \n-#navbar a, .dropdown-btn {\n+#navbar a {\n     display: block;\n     padding: 10px 30px;\n     color: #4d4e53;\n     text-decoration: none;\n     cursor: pointer;\n }\n \n+\n+\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1698774321829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,22 @@\n     text-decoration: none;\n     cursor: pointer;\n }\n \n+.sidenav a, .dropdown-btn {\n+    padding: 6px 8px 6px 16px;\n+    text-decoration: none;\n+    font-size: 20px;\n+    color: #818181;\n+    display: block;\n+    border: none;\n+    background: none;\n+    width: 100%;\n+    text-align: left;\n+    cursor: pointer;\n+    outline: none;\n+}\n \n-\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1698774412739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     text-decoration: none;\n     cursor: pointer;\n }\n \n-.sidenav a, .dropdown-btn {\n+.dropdown-container a, .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #818181;\n"
+                },
+                {
+                    "date": 1698774432657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,15 +48,15 @@\n     position: relative;\n     width: 100%;\n } */\n \n-#navbar a {\n+/* #navbar a {\n     display: block;\n     padding: 10px 30px;\n     color: #4d4e53;\n     text-decoration: none;\n     cursor: pointer;\n-}\n+} */\n \n .dropdown-container a, .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n"
+                },
+                {
+                    "date": 1698782029532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n+    background-color: #111;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698782070702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #111;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698782218395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     font-size: 20px;\n     color: #818181;\n     display: block;\n     border: none;\n-    background: none;\n+    background: blue;\n     width: 100%;\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n"
+                },
+                {
+                    "date": 1698782234123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     font-size: 20px;\n     color: #818181;\n     display: block;\n     border: none;\n-    background: blue;\n+    background: none;\n     width: 100%;\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n"
+                },
+                {
+                    "date": 1698782334475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,10 @@\n     cursor: pointer;\n     outline: none;\n }\n \n+.sidenav\n+\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1698782352572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.sidenav\n+.nav a {}\n \n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n"
+                },
+                {
+                    "date": 1698782371616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,11 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.nav a {}\n+.nav a:hover {\n+    \n+}\n \n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n"
+                },
+                {
+                    "date": 1698782390035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     outline: none;\n }\n \n .nav a:hover {\n-    \n+    color: #f1f1f1;\n }\n \n #main-doc {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1698782414613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.nav a:hover {\n+.nav a:hover, .dropdown-btn {\n     color: #f1f1f1;\n }\n \n #main-doc {\n"
+                },
+                {
+                    "date": 1698782422231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.nav a:hover, .dropdown-btn {\n+.nav a:hover, .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n #main-doc {\n"
+                },
+                {
+                    "date": 1698782443600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.nav a:hover, .dropdown-btn:hover {\n+.dropdown-container a:hover, .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n #main-doc {\n"
+                },
+                {
+                    "date": 1698782468888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,10 @@\n .dropdown-container a:hover, .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n+.active\n+\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1698782478162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,11 @@\n .dropdown-container a:hover, .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n-.active\n+.active {\n+    background-color: ;\n+}\n \n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n"
+                },
+                {
+                    "date": 1698782494068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n     color: #f1f1f1;\n }\n \n .active {\n-    background-color: ;\n+    background-color: #659BD3;\n }\n \n #main-doc {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1698782508142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n }\n \n .active {\n     background-color: #659BD3;\n+    color: #ffffff;\n }\n \n #main-doc {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1698782668465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,14 @@\n     background-color: #659BD3;\n     color: #ffffff;\n }\n \n+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n+.dropdown-container {\n+    display: none;\n+    background-color: #262626;\n+    padding-left: 8px;\n+\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1698782762254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     background-color: #ffffff;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n-    /* fixed side navbar, full height */\n+/* fixed side navbar, full height */\n #navbar {\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n@@ -56,9 +56,10 @@\n     text-decoration: none;\n     cursor: pointer;\n } */\n \n-.dropdown-container a, .dropdown-btn {\n+.dropdown-container a,\n+.dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #818181;\n@@ -70,23 +71,31 @@\n     cursor: pointer;\n     outline: none;\n }\n \n-.dropdown-container a:hover, .dropdown-btn:hover {\n+.dropdown-container a:hover,\n+.dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n .active {\n-    background-color: #659BD3;\n+    background-color: #659bd3;\n     color: #ffffff;\n }\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n     background-color: #262626;\n     padding-left: 8px;\n+}\n \n+/* Optional: Style the caret down icon */\n+.fa-caret-down {\n+    float: right;\n+    padding-right: 8px;\n+}\n+\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n@@ -120,9 +129,10 @@\n table {\n     border-collapse: collapse;\n     width: 100%;\n }\n-th, td {\n+th,\n+td {\n     border: 1px solid black;\n     padding: 8px;\n     text-align: left;\n }\n@@ -130,21 +140,21 @@\n     background-color: #f2f2f2;\n }\n \n .C_color {\n-    color: #ABBBCE;\n+    color: #abbbce;\n     font-weight: 700;\n }\n \n .Cpp_color {\n-    background-image: linear-gradient(to right, #659BD3, #004482);\n-    color: #FFFFFF;\n+    background-image: linear-gradient(to right, #659bd3, #004482);\n+    color: #ffffff;\n     font-weight: 700;\n }\n \n .Csharp_color {\n-    background: #866AE2;\n-    color: #FFFFFF;\n+    background: #866ae2;\n+    color: #ffffff;\n     font-weight: 700;\n }\n \n .Java_color {\n@@ -162,14 +172,14 @@\n     font-weight: 700;\n }\n \n .Ruby_color {\n-    color: #CC342D;\n+    color: #cc342d;\n     font-weight: 700;\n }\n \n .PHP_color {\n-    color: #4F5D95;\n+    color: #4f5d95;\n     font-weight: 700;\n }\n \n .Perl_color {\n@@ -177,19 +187,19 @@\n     font-weight: 700;\n }\n \n .Fortran_color {\n-    color: #0073E6;\n+    color: #0073e6;\n     font-weight: 700;\n }\n \n .R_color {\n-    color: #1B5EAF;\n+    color: #1b5eaf;\n     font-weight: 700;\n }\n \n .Scala_color {\n-    color: #DB3431;\n+    color: #db3431;\n     font-weight: 700;\n }\n \n .PS_color {\n@@ -197,21 +207,21 @@\n     font-weight: 700;\n }\n \n .Bash_color {\n-    color: #3E474A;\n+    color: #3e474a;\n     font-weight: 700;\n }\n \n .Mercury_color {\n-    color: #6A6A6A;\n+    color: #6a6a6a;\n     font-weight: 700;\n }\n \n .Pyt_color {\n     display: inline-block;\n     position: relative;\n-    color: #FFE464;\n+    color: #ffe464;\n     font-weight: 700;\n }\n \n .Pyt_color::before {\n@@ -224,17 +234,17 @@\n \n .Has_color {\n     display: inline-block;\n     position: relative;\n-    color: #8F4E8B;\n+    color: #8f4e8b;\n     font-weight: 700;\n }\n \n .Has_color::before {\n     content: attr(data-char);\n     position: absolute;\n     overflow: hidden;\n-    color: #5E5086;\n+    color: #5e5086;\n     font-weight: 700;\n }\n \n .Lisp_color {\n@@ -243,20 +253,20 @@\n     font-weight: 700;\n }\n \n .Erlang_color {\n-    color: #A90432;\n+    color: #a90432;\n     font-weight: 700;\n }\n \n .Go_color {\n-    color: #79D4FD;\n+    color: #79d4fd;\n     font-weight: 700;\n }\n \n .Delphi_color {\n-    background-image: linear-gradient(to right, #F32232, #A0061A);\n-    color: #FFFFFF;\n+    background-image: linear-gradient(to right, #f32232, #a0061a);\n+    color: #ffffff;\n     font-weight: 700;\n }\n \n @media only screen and (max-width: 815px) {\n"
+                },
+                {
+                    "date": 1698782891178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,13 +76,10 @@\n .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n-.active {\n-    background-color: #659bd3;\n-    color: #ffffff;\n-}\n \n+\n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n     background-color: #262626;\n"
+                },
+                {
+                    "date": 1698782918597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,10 +76,13 @@\n .dropdown-btn:hover {\n     color: #f1f1f1;\n }\n \n+.active {\n+    background-color: #659bd3;\n+    color: #ffffff;\n+}\n \n-\n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n     background-color: #262626;\n"
+                },
+                {
+                    "date": 1698784015271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n+    background-color: ;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784031675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: ;\n+    background-color: #818181;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784057352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #818181;\n+    background-color: #111;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784590466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #111;\n+    background-color: #fefefe;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784629782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #fefefe;\n+    background-color: #19222a;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784671561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n-    background-color: #262626;\n+    background-color: #19222a;\n     padding-left: 8px;\n }\n \n /* Optional: Style the caret down icon */\n"
+                },
+                {
+                    "date": 1698784680288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n-    background-color: #19222a;\n+    background-color: #262626;\n     padding-left: 8px;\n }\n \n /* Optional: Style the caret down icon */\n"
+                },
+                {
+                    "date": 1698784728990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #19222a;\n+    background-color: #111827;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784773654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    color: #f1f1f1;\n+    color: #374151;\n }\n \n .active {\n     background-color: #659bd3;\n"
+                },
+                {
+                    "date": 1698784814230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    color: #374151;\n+    color: #D1D5DB;\n }\n \n .active {\n     background-color: #659bd3;\n"
+                },
+                {
+                    "date": 1698784832131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #111827;\n+    background-color: #F3F4;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698784840258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #F3F4;\n+    background-color: #F3F4F6;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698785078544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #F3F4F6;\n+    background-color: #212121;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698785110964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     background-color: #212121;\n }\n \n header {\n-    color: black;\n+    color: #ffffff;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785130405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,13 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #212121;\n+    background-color: #F3F4F6;\n }\n \n header {\n-    color: #ffffff;\n+    color: #F3F4F6;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785138925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #F3F4F6;\n+    background-color: #212121;\n }\n \n header {\n     color: #F3F4F6;\n"
+                },
+                {
+                    "date": 1698785170517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,13 @@\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n     background-color: #212121;\n+    color: #F3F4F6;\n }\n \n header {\n-    color: #F3F4F6;\n+    color: black;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785184069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n     background-color: #212121;\n-    color: #F3F4F6;\n }\n \n header {\n     color: black;\n"
+                },
+                {
+                    "date": 1698785226017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     background-color: #212121;\n }\n \n header {\n-    color: black;\n+    color: #999;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785254985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,13 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #212121;\n+    background-color: #999;\n }\n \n header {\n-    color: #999;\n+    color: #212121;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785288830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    color: #D1D5DB;\n+    color: #999;\n }\n \n .active {\n     background-color: #659bd3;\n"
+                },
+                {
+                    "date": 1698785300572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    color: #999;\n+    color: #212121;\n }\n \n .active {\n     background-color: #659bd3;\n"
+                },
+                {
+                    "date": 1698785326471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,14 +74,14 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    color: #212121;\n+    color: #D1D5DB;\n }\n \n .active {\n     background-color: #659bd3;\n-    color: #ffffff;\n+    color: #212121;\n }\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n"
+                },
+                {
+                    "date": 1698785334681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n }\n \n .active {\n     background-color: #659bd3;\n-    color: #212121;\n+    color: #ffffff;\n }\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n"
+                },
+                {
+                    "date": 1698785344173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n-    background-color: #262626;\n+    background-color: #212121;\n     padding-left: 8px;\n }\n \n /* Optional: Style the caret down icon */\n"
+                },
+                {
+                    "date": 1698785411764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n+    background-color: ;\n     color: #D1D5DB;\n }\n \n .active {\n"
+                },
+                {
+                    "date": 1698785466129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n-    color: #818181;\n+    color: #999;\n     display: block;\n     border: none;\n     background: none;\n     width: 100%;\n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    background-color: ;\n+    background-color: #000000;\n     color: #D1D5DB;\n }\n \n .active {\n"
+                },
+                {
+                    "date": 1698785499103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #999;\n+    background-color: #212121;\n }\n \n header {\n     color: #212121;\n"
+                },
+                {
+                    "date": 1698785743432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     background-color: #212121;\n }\n \n header {\n-    color: #212121;\n+    color: #999;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698785877092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n     color: #D1D5DB;\n }\n \n .active {\n-    background-color: #659bd3;\n+    background-color: #000000;\n     color: #ffffff;\n }\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n"
+                },
+                {
+                    "date": 1698785990518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #000000;\n     color: #D1D5DB;\n+    overflow: visible;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786019374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n .dropdown-btn:hover {\n     background-color: #000000;\n     color: #D1D5DB;\n     overflow: visible;\n+    overflow-y: auto;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786042689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,11 +75,9 @@\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #000000;\n-    color: #D1D5DB;\n-    overflow: visible;\n-    overflow-y: auto;\n+    color: #D1D5DB;;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786057745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,9 @@\n     width: 100%;\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n+    overflow: hidden;\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n"
+                },
+                {
+                    "date": 1698786076288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,10 @@\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #000000;\n-    color: #D1D5DB;;\n+    color: #D1D5DB;\n+    overflow-y: auto;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786084054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,9 @@\n .dropdown-btn:hover {\n     background-color: #000000;\n     color: #D1D5DB;\n     overflow-y: auto;\n+    overflow: visible;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786110146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,17 +70,14 @@\n     width: 100%;\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n-    overflow: hidden;\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #000000;\n     color: #D1D5DB;\n-    overflow-y: auto;\n-    overflow: visible;\n }\n \n .active {\n     background-color: #000000;\n"
+                },
+                {
+                    "date": 1698786252123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #212121;\n+    background-color: #323339;\n }\n \n header {\n     color: #999;\n"
+                },
+                {
+                    "date": 1698786296137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n }\n \n header {\n     color: #999;\n+    color: #999;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698786311399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n     background-color: #323339;\n }\n \n header {\n-    color: #999;\n-    color: #999;\n+    /* color: #999; */\n+    color: #edeeef;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698786323636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n     background-color: #323339;\n }\n \n header {\n-    /* color: #999; */\n-    color: #edeeef;\n+    color: #999;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n"
+                },
+                {
+                    "date": 1698786342608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n-    color: #999;\n+    color: #edeeef;\n     display: block;\n     border: none;\n     background: none;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1698786364531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 200px;\n+    width: 100px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n"
+                },
+                {
+                    "date": 1698786526532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: fixed;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n-    width: 100px;\n+    width: 200px;\n     height: 100%;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    background-color: #000000;\n+    background-color: #000001;\n     color: #D1D5DB;\n }\n \n .active {\n"
+                },
+                {
+                    "date": 1698786543352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    background-color: #000001;\n+    background-color: #1b;\n     color: #D1D5DB;\n }\n \n .active {\n"
+                },
+                {
+                    "date": 1698786575117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    background-color: #1b;\n+    background-color: #000000;\n     color: #D1D5DB;\n }\n \n .active {\n"
+                },
+                {
+                    "date": 1699546527135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n html,\n body {\n     min-width: 290px;\n     color: #4d4e53;\n-    background-color: #ffffff;\n+    background-color: #d1d5db;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n-    position: fixed;\n+    position: absolute;\n     min-width: 290px;\n     top: 0px;\n     left: 0px;\n     width: 200px;\n@@ -18,13 +18,13 @@\n     border-color: rgba(0, 22, 22, 0.4);\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n-    background-color: #323339;\n+    background-color: #f3f4f6;\n }\n \n header {\n-    color: #999;\n+    color: #374151;\n     margin: 10px;\n     text-align: center;\n     font-size: 1.8em;\n     font-weight: thin;\n@@ -57,14 +57,14 @@\n     text-decoration: none;\n     cursor: pointer;\n } */\n \n-.dropdown-container a,\n+/* .dropdown-container a,\n .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n-    color: #edeeef;\n+    color: #374151;\n     display: block;\n     border: none;\n     background: none;\n     width: 100%;\n@@ -74,22 +74,25 @@\n }\n \n .dropdown-container a:hover,\n .dropdown-btn:hover {\n-    background-color: #000000;\n-    color: #D1D5DB;\n-}\n+    background-color: #d1d5db;\n+    border-radius: 16px;\n+    display: block;\n+} */\n \n-.active {\n-    background-color: #000000;\n-    color: #ffffff;\n-}\n+/* .active {\n+    background-color: #d1d5db;\n+    color: #f9f9f9;\n+} */\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n .dropdown-container {\n     display: none;\n+    position: absolute;\n     background-color: #212121;\n     padding-left: 8px;\n+    min-width: 150px;\n }\n \n /* Optional: Style the caret down icon */\n .fa-caret-down {\n"
+                },
+                {
+                    "date": 1699546990536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n html,\n body {\n     min-width: 290px;\n     color: #4d4e53;\n-    background-color: #d1d5db;\n+    background-color: #f3f4f6;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n     position: absolute;\n-    min-width: 290px;\n+    min-width: 90px;\n     top: 0px;\n     left: 0px;\n     width: 200px;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1699547517595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,8 +93,10 @@\n     padding-left: 8px;\n     min-width: 150px;\n }\n \n+.side-nav\n+\n /* Optional: Style the caret down icon */\n .fa-caret-down {\n     float: right;\n     padding-right: 8px;\n"
+                },
+                {
+                    "date": 1699547567019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,12 @@\n     padding-left: 8px;\n     min-width: 150px;\n }\n \n-.side-nav\n+.side-nav button:hover .dropdown-container {\n+    display: block;\n+    background-color: #333;\n+}\n \n /* Optional: Style the caret down icon */\n .fa-caret-down {\n     float: right;\n"
+                },
+                {
+                    "date": 1699547643811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n-    position: absolute;\n+    position: fixed;\n     min-width: 90px;\n     top: 0px;\n     left: 0px;\n     width: 200px;\n"
+                },
+                {
+                    "date": 1699547710791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     text-decoration: none;\n     cursor: pointer;\n } */\n \n-/* .dropdown-container a,\n+.dropdown-container a,\n .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n@@ -71,9 +71,9 @@\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n }\n-\n+/*\n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #d1d5db;\n     border-radius: 16px;\n"
+                },
+                {
+                    "date": 1699547755075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #374151;\n-    display: block;\n+    display: none;\n     border: none;\n     background: none;\n     width: 100%;\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699547763034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #374151;\n-    display: none;\n+    display: block;\n     border: none;\n     background: none;\n     width: 100%;\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699547778913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,9 @@\n     text-decoration: none;\n     cursor: pointer;\n } */\n \n-.dropdown-container a,\n-.dropdown-btn {\n+.dropdown-container a {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #374151;\n"
+                },
+                {
+                    "date": 1699547795418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,10 @@\n     text-decoration: none;\n     cursor: pointer;\n } */\n \n-.dropdown-container a {\n+\n+.dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #374151;\n"
+                },
+                {
+                    "date": 1699548954769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n html,\n body {\n     min-width: 290px;\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n     color: #4d4e53;\n     background-color: #f3f4f6;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n"
+                },
+                {
+                    "date": 1699548970561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n html,\n body {\n     min-width: 290px;\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n     color: #4d4e53;\n     background-color: #f3f4f6;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n"
+                },
+                {
+                    "date": 1699549036545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     z-index: 1;\n     overflow: hidden;\n     padding-top: 20px;\n     background-color: #f3f4f6;\n+    color: #374151;\n }\n \n header {\n     color: #374151;\n"
+                },
+                {
+                    "date": 1699549337548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,36 @@\n     font-size: 1.8em;\n     font-weight: thin;\n }\n \n+#navbar ul {\n+    list-style-type: none;\n+    padding: 0;\n+}\n+\n+#navbar li {\n+    padding: 10px;\n+    position: relative;\n+}\n+\n+#navbar a {\n+    color: inherit;\n+    text-decoration: none;\n+}\n+\n+.submenu {\n+    display: none;\n+    position: absolute;\n+    left: 100%;\n+    top: 0;\n+}\n+\n+#navbar li:hover .submenu {\n+    display: block;\n+    background-color: #D1D5DB;\n+}\n+\n+\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1699549439562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n     cursor: pointer;\n } */\n \n \n-.dropdown-btn {\n+/* .dropdown-btn {\n     padding: 6px 8px 6px 16px;\n     text-decoration: none;\n     font-size: 20px;\n     color: #374151;\n@@ -99,9 +99,9 @@\n     width: 100%;\n     text-align: left;\n     cursor: pointer;\n     outline: none;\n-}\n+} */\n /*\n .dropdown-container a:hover,\n .dropdown-btn:hover {\n     background-color: #d1d5db;\n@@ -114,9 +114,9 @@\n     color: #f9f9f9;\n } */\n \n /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n-.dropdown-container {\n+/* .dropdown-container {\n     display: none;\n     position: absolute;\n     background-color: #212121;\n     padding-left: 8px;\n@@ -125,9 +125,9 @@\n \n .side-nav button:hover .dropdown-container {\n     display: block;\n     background-color: #333;\n-}\n+} */\n \n /* Optional: Style the caret down icon */\n .fa-caret-down {\n     float: right;\n"
+                },
+                {
+                    "date": 1699549471888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n-    position: fixed;\n+    /* position: fixed; */\n     min-width: 90px;\n     top: 0px;\n     left: 0px;\n     width: 200px;\n"
+                },
+                {
+                    "date": 1699549500711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n-    /* position: fixed; */\n+    position: fixed;\n     min-width: 90px;\n     top: 0px;\n     left: 0px;\n     width: 200px;\n"
+                },
+                {
+                    "date": 1699549514780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,21 +7,15 @@\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n-    position: fixed;\n-    min-width: 90px;\n-    top: 0px;\n-    left: 0px;\n+    background-color: #f3f4f6;\n+    color: #374151;\n     width: 200px;\n     height: 100%;\n+    padding-top: 20px;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n-    z-index: 1;\n-    overflow: hidden;\n-    padding-top: 20px;\n-    background-color: #f3f4f6;\n-    color: #374151;\n }\n \n header {\n     color: #374151;\n"
+                },
+                {
+                    "date": 1699549531019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     line-height: 1.5;\n }\n /* fixed side navbar, full height */\n #navbar {\n+    position: fixed;\n     background-color: #f3f4f6;\n     color: #374151;\n     width: 200px;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1699549707310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,10 @@\n     left: 100%;\n     top: 0;\n }\n \n+#navbar\n+\n #navbar li:hover .submenu {\n     display: block;\n     background-color: #D1D5DB;\n }\n"
+                },
+                {
+                    "date": 1699549745268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,11 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar\n+#navbar li:hover {\n+    background-color: #000000;\n+}\n \n #navbar li:hover .submenu {\n     display: block;\n     background-color: #D1D5DB;\n"
+                },
+                {
+                    "date": 1699549794467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,14 +48,14 @@\n     top: 0;\n }\n \n #navbar li:hover {\n-    background-color: #000000;\n+    background-color: #D1D5DB;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n-    background-color: #D1D5DB;\n+    background-color: #f3f4f6;\n }\n \n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699549817512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n }\n \n #navbar li:hover {\n     background-color: #D1D5DB;\n+    border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n"
+                },
+                {
+                    "date": 1699549874612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,72 +63,14 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-/* #navbar ul {\n-    height: 88%;\n-    padding: 0;\n-    overflow-y: auto;\n-    overflow-x: hidden;\n-}\n-\n-#navbar li {\n-    color: #4d4e53;\n-    border-top: 1px solid;\n-    list-style: none;\n-    position: relative;\n-    width: 100%;\n-} */\n-\n-/* #navbar a {\n-    display: block;\n-    padding: 10px 30px;\n-    color: #4d4e53;\n-    text-decoration: none;\n-    cursor: pointer;\n-} */\n-\n-\n-/* .dropdown-btn {\n-    padding: 6px 8px 6px 16px;\n-    text-decoration: none;\n-    font-size: 20px;\n-    color: #374151;\n-    display: block;\n-    border: none;\n-    background: none;\n-    width: 100%;\n-    text-align: left;\n-    cursor: pointer;\n-    outline: none;\n-} */\n-/*\n-.dropdown-container a:hover,\n-.dropdown-btn:hover {\n-    background-color: #d1d5db;\n-    border-radius: 16px;\n-    display: block;\n-} */\n-\n /* .active {\n     background-color: #d1d5db;\n     color: #f9f9f9;\n } */\n \n-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */\n-/* .dropdown-container {\n-    display: none;\n-    position: absolute;\n-    background-color: #212121;\n-    padding-left: 8px;\n-    min-width: 150px;\n-}\n \n-.side-nav button:hover .dropdown-container {\n-    display: block;\n-    background-color: #333;\n-} */\n-\n /* Optional: Style the caret down icon */\n .fa-caret-down {\n     float: right;\n     padding-right: 8px;\n"
+                },
+                {
+                    "date": 1699550161112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,12 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-/* .active {\n-    background-color: #d1d5db;\n+.active {\n+    background-color: #3d3e3f;\n     color: #f9f9f9;\n-} */\n+}\n \n \n /* Optional: Style the caret down icon */\n .fa-caret-down {\n"
+                },
+                {
+                    "date": 1699550235211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-.active {\n+li .active {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n }\n \n"
+                },
+                {
+                    "date": 1699550283553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-li .active {\n+#navbar li:active {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n }\n \n"
+                },
+                {
+                    "date": 1699550355712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:active {\n+#navbar li:active .submenu {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n }\n \n"
+                },
+                {
+                    "date": 1699550489501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,11 +63,12 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:active .submenu {\n+#navbar li:active {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n+    border-radius: 16px;\n }\n \n \n /* Optional: Style the caret down icon */\n"
+                },
+                {
+                    "date": 1699550595599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:active {\n+#navbar li:focus {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699550660986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:focus {\n+#navbar .submenu:focus {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699550735484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .submenu:focus {\n+#navbar .submenu:target {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699550900823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .submenu:target {\n+#navbar .nav-link:active {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699550975950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .nav-link:active {\n+#navbar .nav-link:visited {\n     background-color: #3d3e3f;\n     color: #f9f9f9;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551031474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n }\n \n #navbar .nav-link:visited {\n     background-color: #3d3e3f;\n-    color: #f9f9f9;\n+    color: #374151;\n     border-radius: 16px;\n }\n \n \n"
+                },
+                {
+                    "date": 1699551059873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,11 +63,11 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .nav-link:visited {\n+#navbar .nav-link:active {\n     background-color: #3d3e3f;\n-    color: #374151;\n+    color: red;\n     border-radius: 16px;\n }\n \n \n"
+                },
+                {
+                    "date": 1699551097062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .nav-link:active {\n+#navbar .nav-link:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551113523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .nav-link:focus {\n+#navbar .li:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551133636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .li:focus {\n+#navbar .li:focus .submenu {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551333225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .li:focus .submenu {\n+#navbar .li:active .submenu {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551379105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .li:active .submenu {\n+#navbar li:active .submenu {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551398719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:active .submenu {\n+#navbar li:active {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551475256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:active {\n+#navbar .submenu li:active {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551589541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .submenu li:active {\n+#navbar .submenu li:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551673936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar .submenu li:focus {\n+#navbar li:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551699058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:focus {\n+#navbar li:focus .submenu {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551754502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,19 +57,19 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n+#navbar li:focus .nav-link {\n+    background-color: #3d3e3f;\n+    color: red;\n+    border-radius: 16px;\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n \n-#navbar li:focus .submenu {\n-    background-color: #3d3e3f;\n-    color: red;\n-    border-radius: 16px;\n-}\n \n \n /* Optional: Style the caret down icon */\n .fa-caret-down {\n"
+                },
+                {
+                    "date": 1699551769996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus .nav-link {\n+.nav-link {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551800679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.nav-link {\n+#navbar {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551810341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar {\n+#navbar ul {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551816786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul {\n+#navbar ul li {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551822535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul li {\n+#navbar ul {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551836967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul {\n+#navbar ul:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551850943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul:focus {\n+#navbar ul li:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551865778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul li:focus {\n+#navbar li:focus ul {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551880280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus ul {\n+#navbar li:active ul {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551894898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active ul {\n+#navbar li:active {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551916076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active {\n+#navbar .nav-link:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699551948109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .nav-link:focus {\n+#navbar li .nav-link:focus {\n     background-color: #3d3e3f;\n     color: red;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552177968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,12 +57,11 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li .nav-link:focus {\n-    background-color: #3d3e3f;\n-    color: red;\n-    border-radius: 16px;\n+#navbar li:focus .submenu {\n+    display: block;\n+    background-color: #db3431;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699552200358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus .submenu {\n+#navbar li:focus {\n     display: block;\n     background-color: #db3431;\n }\n \n"
+                },
+                {
+                    "date": 1699552252589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus {\n+.nav-link {\n     display: block;\n     background-color: #db3431;\n }\n \n"
+                },
+                {
+                    "date": 1699552270875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n \n .nav-link {\n     display: block;\n     background-color: #db3431;\n+    border-radius: 16px;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699552283485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,8 @@\n     background-color: #f3f4f6;\n }\n \n .nav-link {\n-    display: block;\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552343294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.nav-link {\n+.active {\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552394727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.active {\n+.focus {\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552723366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.focus {\n+#navbar li::selection {\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552774170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li::selection {\n+#navbar li:selected {\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552801337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:selected {\n+#navbar li::selection .submenu {\n     background-color: #db3431;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699552844004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,11 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li::selection .submenu {\n+#navbar li:focus .submenu {\n     background-color: #db3431;\n+    display: block;\n     border-radius: 16px;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699552864648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus .submenu {\n+#navbar li:active .submenu {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552886641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active .submenu {\n+#navbar li:active .nav-link {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552906284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active .nav-link {\n+#navbar li:active {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552934506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active {\n+#navbar li::selection {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552946376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li::selection {\n+#navbar li:selected {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552985603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:selected {\n+#navbar li:focus-visible {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699552997365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus-visible {\n+#navbar li:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553015651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,13 @@\n     left: 100%;\n     top: 0;\n }\n \n+#navbar li:focus {\n+    background-color: #db3431;\n+    display: block;\n+    border-radius: 16px;\n+}\n #navbar li:hover {\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n@@ -57,13 +62,8 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus {\n-    background-color: #db3431;\n-    display: block;\n-    border-radius: 16px;\n-}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699553028093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,13 +47,8 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:focus {\n-    background-color: #db3431;\n-    display: block;\n-    border-radius: 16px;\n-}\n #navbar li:hover {\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n@@ -62,8 +57,13 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n+#navbar li:focus {\n+    background-color: #db3431;\n+    display: block;\n+    border-radius: 16px;\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699553105615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus {\n+.nav-link a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553135306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.nav-link a:focus {\n+#navbar .nav-link a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553167138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .nav-link a:focus {\n+#navbar li a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553190806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li a:focus {\n+#navbar ul li a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553207696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul li a:focus {\n+#navbar ul li .submenu a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553222810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul li .submenu a:focus {\n+#navbar li .submenu a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553244294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li .submenu a:focus {\n+#navbar li a:focus .submenu {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553258310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li a:focus .submenu {\n+#navbar li:focus .submenu {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553340971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:focus .submenu {\n+.submenu {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553362626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu {\n+.submenu a:focus {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553918093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu a:focus {\n+.submenu:active {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553974808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu:active {\n+#navbar .submenu:active {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699553989252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu:active {\n+#navbar li:active {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699554011202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active {\n+#navbar li:active .submenu {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699554021447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active .submenu {\n+#navbar li:active {\n     background-color: #db3431;\n     display: block;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699554068147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n }\n \n #navbar li:active {\n     background-color: #db3431;\n-    display: block;\n     border-radius: 16px;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699554875085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,10 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active {\n-    background-color: #db3431;\n-    border-radius: 16px;\n-}\n \n+\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1699555265325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,10 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n+.submenu\n \n-\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1699555277097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,11 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu\n+.submenu:target {\n+    background-color: #000000;\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699555559687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu:target {\n+.submenu:focus {\n     background-color: #000000;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699555818854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu:focus {\n+.submenu a:focus {\n     background-color: #000000;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556000276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,12 +57,8 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu a:focus {\n-    background-color: #000000;\n-}\n-\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1699556024860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,16 +62,8 @@\n     text-align: left;\n     margin: 0px;\n }\n \n-\n-\n-/* Optional: Style the caret down icon */\n-.fa-caret-down {\n-    float: right;\n-    padding-right: 8px;\n-}\n-\n #main-doc {\n     position: absolute;\n     margin-left: 310px;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1699556131162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n #navbar {\n     position: fixed;\n     background-color: #f3f4f6;\n     color: #374151;\n-    width: 200px;\n+    width: 150px;\n     height: 100%;\n     padding-top: 20px;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n"
+                },
+                {
+                    "date": 1699556143205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n #navbar {\n     position: fixed;\n     background-color: #f3f4f6;\n     color: #374151;\n-    width: 150px;\n+    width: 200px;\n     height: 100%;\n     padding-top: 20px;\n     border-right: solid;\n     border-color: rgba(0, 22, 22, 0.4);\n"
+                },
+                {
+                    "date": 1699556514389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,10 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n+.submenu \n+\n #main-doc header {\n     text-align: left;\n     margin: 0px;\n }\n"
+                },
+                {
+                    "date": 1699556546413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,11 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu \n+.submenu a:focus {\n+    background-color: #004482;\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699556703863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu a:focus {\n+#navbar .submenu a:focus {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556742900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu a:focus {\n+#navbar ul > a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556840642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar ul > a.current {\n+#navbar li > a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556866843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li > a.current {\n+#navbar a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556947924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar a.current {\n+#navbar .nav-link.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556963351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .nav-link.current {\n+#navbar .nav-link .current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699556979530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .nav-link .current {\n+#navbar .nav-link a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557098016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .nav-link a.current {\n+.submenu a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557126038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu a.current {\n+#navbar a.current {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557140517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar a.current {\n+#navbar a.current .submenu {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557355490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar a.current .submenu {\n+.submenu a.active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557500654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu a.active {\n+#navbar .submenu a.active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557511241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu a.active {\n+#navbar .submenu a:active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557530253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu a:active {\n+#navbar .submenu li:active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557551251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu li:active {\n+#navbar li:active .submenu {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699557563189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active .submenu {\n+#navbar .submenu li:active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699558427720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar .submenu li:active {\n+.active {\n     background-color: #004482;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699558530828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n }\n \n .active {\n     background-color: #004482;\n+    border-radius: 16px;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699558634078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n }\n \n .active {\n     background-color: #004482;\n+    color: #ffffff;\n     border-radius: 16px;\n }\n \n #main-doc header {\n"
+                },
+                {
+                    "date": 1699558682759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.active {\n+#navbar .active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699558728198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover {\n+#navbar .active li:hover {\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1699558740386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,23 +47,23 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar .active li:hover {\n+#navbar .active, li:hover {\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n     background-color: #f3f4f6;\n }\n-\n+/* \n #navbar .active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n-}\n+} */\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699558777289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,23 +47,23 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar .active, li:hover {\n+#navbar li:hover {\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n     background-color: #f3f4f6;\n }\n-/* \n-#navbar .active {\n+\n+#navbar li.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n-} */\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699558793172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li.active {\n+#navbar li:active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699558812711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li:active {\n+#navbar li a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699558895268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,18 +52,18 @@\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n-#navbar li:hover .submenu {\n+#navbar li:hover .submenu .active {\n     display: block;\n-    background-color: #f3f4f6;\n+    background-color: red;\n }\n \n-#navbar li a.active {\n+/* #navbar li a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n-}\n+} */\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699558912682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n-#navbar li:hover .submenu .active {\n+#navbar li:hover .submenu, .active {\n     display: block;\n     background-color: red;\n }\n \n"
+                },
+                {
+                    "date": 1699558968558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,18 +52,18 @@\n     background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n-#navbar li:hover .submenu, .active {\n+#navbar li:hover .submenu {\n     display: block;\n-    background-color: red;\n+    background-color: #f3f4f6;\n }\n \n-/* #navbar li a.active {\n+#navbar li a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n-} */\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699558988427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n #navbar li a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n+    font-size: 18px;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699559018176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n #navbar li a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n-    font-size: 18px;\n+    padding: 10px;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699559047463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li a.active {\n+#navbar a.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559064947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar a.active {\n+#navbar li.active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559098862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li.active {\n+#navbar li .active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559126040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n+    position: relative;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699559165478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,8 @@\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n-    position: relative;\n }\n \n #main-doc header {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1699559318190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-#navbar li .active {\n+.submenu li .active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559343339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu li .active {\n+.submenu ul li .active {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559351387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-.submenu ul li .active {\n+.submenu ul li.active a {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1699559406773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n }\n \n #navbar li:hover .submenu {\n     display: block;\n-    background-color: #f3f4f6;\n+    background-color: red;\n }\n \n .submenu ul li.active a {\n     background-color: #004482;\n"
+                },
+                {
+                    "date": 1699559472743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,24 +47,25 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover {\n-    background-color: #D1D5DB;\n+#navbar li:hover, #navbar li.active {\n+    background-color: #004482;\n+    /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n-    background-color: red;\n+    background-color: #f3f4f6;\n }\n \n-.submenu ul li.active a {\n+/* .submenu ul li.active a {\n     background-color: #004482;\n     color: #ffffff;\n     border-radius: 16px;\n     padding: 10px;\n-}\n+} */\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n"
+                },
+                {
+                    "date": 1699559507856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar li.active {\n+#navbar li:hover, #navbar a.active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559537739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar a.active {\n+#navbar li:hover, #navbar li a.active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559552998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar li a.active {\n+#navbar li:hover, #navbar li .active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559645067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar li .active {\n+#navbar li:hover, #navbar .submenu.active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559657503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar .submenu.active {\n+#navbar li:hover, #navbar .submenu .active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559678913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar .submenu .active {\n+#navbar li:hover, #navbar a.active {\n     background-color: #004482;\n     /* background-color: #D1D5DB; */\n     border-radius: 16px;\n }\n"
+                },
+                {
+                    "date": 1699559780058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,11 +47,10 @@\n     left: 100%;\n     top: 0;\n }\n \n-#navbar li:hover, #navbar a.active {\n-    background-color: #004482;\n-    /* background-color: #D1D5DB; */\n+#navbar li:hover {\n+    background-color: #D1D5DB;\n     border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n"
+                },
+                {
+                    "date": 1699740761894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,51 @@\n html,\n body {\n     min-width: 290px;\n     color: #4d4e53;\n-    background-color: #f3f4f6;\n+    background-color: #fff;\n     font-family: \"Open Sans\", Arial, sans-serif;\n     line-height: 1.5;\n }\n+\n+.accordion {\n+    background-color: #eee;\n+    color: #444;\n+    cursor: pointer;\n+    padding: 18px;\n+    width: 100%;\n+    border: none;\n+    text-align: left;\n+    outline: none;\n+    font-size: 15px;\n+    transition: 0.4s;\n+}\n+\n+.active,\n+.accordion:hover {\n+    background-color: #ccc;\n+}\n+\n+.accordion::after {\n+    content: '\\002B';\n+    color: #777;\n+    font-weight: bold;\n+    float: right;\n+    margin-left: 5px;\n+}\n+\n+/* Style to all active elements with a \"minus\" sign except submenu class name */\n+.active:not(.submenu li)::after {\n+    content: '\\2212';\n+}\n+\n+.panel {\n+    padding: 0 18px;\n+    display: none;\n+    background-color: white;\n+    overflow: hidden;\n+}\n+\n /* fixed side navbar, full height */\n #navbar {\n     position: fixed;\n     background-color: #f3f4f6;\n@@ -36,35 +75,26 @@\n     position: relative;\n }\n \n #navbar a {\n-    color: inherit;\n+    color: #374151;\n     text-decoration: none;\n }\n \n-.submenu {\n-    display: none;\n-    position: absolute;\n-    left: 100%;\n-    top: 0;\n-}\n-\n #navbar li:hover {\n-    background-color: #D1D5DB;\n+    background-color: #d1d5db;\n     border-radius: 16px;\n }\n \n #navbar li:hover .submenu {\n     display: block;\n     background-color: #f3f4f6;\n }\n \n-/* .submenu ul li.active a {\n-    background-color: #004482;\n-    color: #ffffff;\n+#navbar li.active {\n+    background-color: #d1d5db;\n     border-radius: 16px;\n-    padding: 10px;\n-} */\n+}\n \n #main-doc header {\n     text-align: left;\n     margin: 0px;\n@@ -243,8 +273,12 @@\n     color: #ffffff;\n     font-weight: 700;\n }\n \n+.cite_backlink {\n+    \n+}\n+\n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n     #navbar ul {\n         border: 1px solid;\n@@ -284,4 +318,6 @@\n         padding-right: 45px;\n         min-width: 233px;\n     }\n }\n+\n+\n"
+                },
+                {
+                    "date": 1699740775222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink {\n-    \n+    padding: ;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740788252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink {\n-    padding: ;\n+    padding: 0 10px 0 10px;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740822738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink {\n-    padding: 0 10px 0 10px;\n+    padding: 0 2px 0 2px;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740835224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink {\n-    padding: 0 2px 0 2px;\n+    padding: 0 2px 0 5px;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740842085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink {\n-    padding: 0 2px 0 5px;\n+    padding: 0 5px 0 2px;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740898762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,8 +275,9 @@\n }\n \n .cite_backlink {\n     padding: 0 5px 0 2px;\n+    text-decoration: none;\n }\n \n @media only screen and (max-width: 815px) {\n     /* For mobile phones: */\n"
+                },
+                {
+                    "date": 1699740922555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,9 @@\n     color: #ffffff;\n     font-weight: 700;\n }\n \n-.cite_backlink {\n+.cite_backlink a {\n     padding: 0 5px 0 2px;\n     text-decoration: none;\n }\n \n"
+                },
+                {
+                    "date": 1699740936097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink a {\n-    padding: 0 5px 0 2px;\n+    padding: 0 5px 0 20px;\n     text-decoration: none;\n }\n \n @media only screen and (max-width: 815px) {\n"
+                },
+                {
+                    "date": 1699740943709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n     font-weight: 700;\n }\n \n .cite_backlink a {\n-    padding: 0 5px 0 20px;\n+    padding: 0 5px 0 2px;\n     text-decoration: none;\n }\n \n @media only screen and (max-width: 815px) {\n"
+                }
+            ],
+            "date": 1698426072448,
+            "name": "Commit-0",
+            "content": "html,\nbody {\n    min-width: 290px;\n    color: #4d4e53;\n    background-color: #ffffff;\n    font-family: \"Open Sans\", Arial, sans-serif;\n    line-height: 1.5;\n}\n\n#navbar {\n    position: fixed;\n    min-width: 290px;\n    top: 0px;\n    left: 0px;\n    width: 300px;\n    height: 100%;\n    border-right: solid;\n    border-color: rgba(0, 22, 22, 0.4);\n}\n\nheader {\n    color: black;\n    margin: 10px;\n    text-align: center;\n    font-size: 2.5em;\n    font-weight: thin;\n}\n\n#main-doc header {\n    text-align: left;\n    margin: 0px;\n}\n\n#navbar ul {\n    height: 88%;\n    padding: 0;\n    overflow-y: auto;\n    overflow-x: hidden;\n}\n\n#navbar li {\n    color: #4d4e53;\n    border-top: 1px solid;\n    list-style: none;\n    position: relative;\n    width: 100%;\n}\n\n#navbar a {\n    display: block;\n    padding: 10px 30px;\n    color: #4d4e53;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n#main-doc {\n    position: absolute;\n    margin-left: 310px;\n    padding: 20px;\n    margin-bottom: 110px;\n}\n\nsection article {\n    color: #4d4e53;\n    margin: 15px;\n    font-size: 0.96em;\n}\n\nsection li {\n    margin: 15px 0px 0px 20px;\n}\n\ncode {\n    display: block;\n    text-align: left;\n    white-space: pre-line;\n    position: relative;\n    word-break: normal;\n    word-wrap: normal;\n    line-height: 2;\n    background-color: #f7f7f7;\n    padding: 15px;\n    margin: 10px;\n    border-radius: 5px;\n}\n\ntable {\n    border-collapse: collapse;\n    width: 100%;\n}\nth, td {\n    border: 1px solid black;\n    padding: 8px;\n    text-align: left;\n}\nth {\n    background-color: #f2f2f2;\n}\n\n.C_color {\n    color: #ABBBCE;\n    font-weight: 700;\n}\n\n.Cpp_color {\n    background-image: linear-gradient(to right, #659BD3, #004482);\n    color: #FFFFFF;\n    font-weight: 700;\n}\n\n.Csharp_color {\n    background: #866AE2;\n    color: #FFFFFF;\n    font-weight: 700;\n}\n\n.Java_color {\n    color: #007396;\n    font-weight: 700;\n}\n\n.Rust_color {\n    color: #000000;\n    font-weight: 700;\n}\n\n.JS_color {\n    color: #f7df1e;\n    font-weight: 700;\n}\n\n.Ruby_color {\n    color: #CC342D;\n    font-weight: 700;\n}\n\n.PHP_color {\n    color: #4F5D95;\n    font-weight: 700;\n}\n\n.Perl_color {\n    color: #ff481e;\n    font-weight: 700;\n}\n\n.Fortran_color {\n    color: #0073E6;\n    font-weight: 700;\n}\n\n.R_color {\n    color: #1B5EAF;\n    font-weight: 700;\n}\n\n.Scala_color {\n    color: #DB3431;\n    font-weight: 700;\n}\n\n.PS_color {\n    color: #012456;\n    font-weight: 700;\n}\n\n.Bash_color {\n    color: #3E474A;\n    font-weight: 700;\n}\n\n.Mercury_color {\n    color: #6A6A6A;\n    font-weight: 700;\n}\n\n.Pyt_color {\n    display: inline-block;\n    position: relative;\n    color: #FFE464;\n    font-weight: 700;\n}\n\n.Pyt_color::before {\n    content: attr(data-char);\n    position: absolute;\n    overflow: hidden;\n    color: #306998;\n    font-weight: 700;\n}\n\n.Has_color {\n    display: inline-block;\n    position: relative;\n    color: #8F4E8B;\n    font-weight: 700;\n}\n\n.Has_color::before {\n    content: attr(data-char);\n    position: absolute;\n    overflow: hidden;\n    color: #5E5086;\n    font-weight: 700;\n}\n\n.Lisp_color {\n    background-color: #000000;\n    color: #ffffff;\n    font-weight: 700;\n}\n\n.Erlang_color {\n    color: #A90432;\n    font-weight: 700;\n}\n\n.Go_color {\n    color: #79D4FD;\n    font-weight: 700;\n}\n\n.Delphi_color {\n    background-image: linear-gradient(to right, #F32232, #A0061A);\n    color: #FFFFFF;\n    font-weight: 700;\n}\n\n@media only screen and (max-width: 815px) {\n    /* For mobile phones: */\n    #navbar ul {\n        border: 1px solid;\n        height: 207px;\n    }\n\n    #navbar {\n        background-color: white;\n        position: absolute;\n        top: 0;\n        padding: 0;\n        margin: 0;\n        width: 100%;\n        max-height: 275px;\n        border: none;\n        z-index: 1;\n        border-bottom: 2px solid;\n    }\n\n    #main-doc {\n        position: relative;\n        margin-left: 0px;\n        margin-top: 270px;\n    }\n}\n\n@media only screen and (max-width: 400px) {\n    #main-doc {\n        margin-left: -10px;\n    }\n\n    code {\n        margin-left: -20px;\n        width: 100%;\n        padding: 15px;\n        padding-left: 10px;\n        padding-right: 45px;\n        min-width: 233px;\n    }\n}\n"
+        }
+    ]
+}
