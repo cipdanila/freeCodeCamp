@@ -150,21 +150,69 @@ th {
     font-weight: 700;
 }
 
-.Cpp_color {
+.Cpp_color, .Cpp_color a {
     background-image: linear-gradient(to right, #659bd3, #004482);
     color: #ffffff;
     font-weight: 700;
 }
 
-.Csharp_color {
+.C_Cpp_color {
+    background: linear-gradient(to right, #ffffff, #659bd3, #004482);
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Csharp_color, .Csharp_color a {
     background: #866ae2;
     color: #ffffff;
     font-weight: 700;
+    text-align: center;
 }
 
-.Java_color {
-    color: #007396;
+.Java_color, .Java_color a {
+    background-color: #3A75B0;
+    color: #ffffff;
     font-weight: 700;
+    text-align: center;
+}
+
+.JS_color, .JS_color a {
+    background-color: #FF8D11;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.PHP_color, .PHP_color a {
+    background-color: #4f5d95;
+    border-radius: 50%;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Pyt_color {
+    display: inline-block;
+    position: relative;
+    color: #ffe464;
+    font-weight: 700;
+}
+
+.Pyt_color::before {
+    content: attr(data-char);
+    position: absolute;
+    overflow: hidden;
+    color: #306998;
+    font-weight: 700;
+}
+
+.Python_color {
+    background-image: linear-gradient(to right, #306998, #ffe464);
+    /* background-color: #0073e6; */
+    color: #000;
+    font-weight: 700;
+    text-align: center;
 }
 
 .Rust_color {
@@ -172,18 +220,8 @@ th {
     font-weight: 700;
 }
 
-.JS_color {
-    color: #f7df1e;
-    font-weight: 700;
-}
-
 .Ruby_color {
     color: #cc342d;
-    font-weight: 700;
-}
-
-.PHP_color {
-    color: #4f5d95;
     font-weight: 700;
 }
 
@@ -222,20 +260,6 @@ th {
     font-weight: 700;
 }
 
-.Pyt_color {
-    display: inline-block;
-    position: relative;
-    color: #ffe464;
-    font-weight: 700;
-}
-
-.Pyt_color::before {
-    content: attr(data-char);
-    position: absolute;
-    overflow: hidden;
-    color: #306998;
-    font-weight: 700;
-}
 
 .Has_color {
     display: inline-block;
@@ -277,6 +301,10 @@ th {
 .cite_backlink a {
     padding: 0 5px 0 2px;
     text-decoration: none;
+}
+
+ol.references li:target {
+    background-color: #eaf3ff;
 }
 
 @media only screen and (max-width: 815px) {
