@@ -2329,5 +2329,18 @@
                 });
             }
         </script>
+
+        <script>
+            $(document).ready(function() {
+                $(".accordion").click(function() {
+                    // Close all panels
+                    $(".panel").slideUp("slow");
+
+                    // Open the panel associated with the pressed button
+                    $(this).next(".panel").slideDown("slow");
+                });
+            });
+        </script>
+
     </body>
 </html>
